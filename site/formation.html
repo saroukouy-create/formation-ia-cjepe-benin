@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CJEPE-BENIN | Formation Expert en Intelligence Artificielle</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<button id="menu-btn" aria-label="Ouvrir le menu">☰</button>
+
+<nav id="sidebar">
+  <div class="sidebar-logo">
+    <div class="school">CJEPE-BENIN</div>
+    <h2>Formation Expert en IA</h2>
+    <a class="back" href="index.html">← Retour à l'accueil</a>
+  </div>
+
+  <div class="global-progress">
+    <div class="lbl" id="global-bar-label">Progression <b>0%</b> (0/8)</div>
+    <div class="bar"><div class="bar-fill" id="global-bar-fill"></div></div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">Introduction</div>
+    <button class="nav-item active" data-target="module-0"><span class="num">00</span>Présentation<span class="check"></span></button>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">Niveau Zéro</div>
+    <button class="nav-item" data-target="module-1"><span class="num">01</span>Fondamentaux de l'IA<span class="check"></span></button>
+    <button class="nav-item" data-target="module-2"><span class="num">02</span>Machine Learning<span class="check"></span></button>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">Niveau Intermédiaire</div>
+    <button class="nav-item" data-target="module-3"><span class="num">03</span>Deep Learning<span class="check"></span></button>
+    <button class="nav-item" data-target="module-4"><span class="num">04</span>NLP & Langage<span class="check"></span></button>
+    <button class="nav-item" data-target="module-5"><span class="num">05</span>Vision par Ordinateur<span class="check"></span></button>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">Niveau Avancé</div>
+    <button class="nav-item" data-target="module-6"><span class="num">06</span>Déploiement de Modèles<span class="check"></span></button>
+    <button class="nav-item" data-target="module-7"><span class="num">07</span>Éthique & Insertion Pro<span class="check"></span></button>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">Niveau Expert · Bonus</div>
+    <button class="nav-item" data-target="module-8"><span class="num">08</span>Atelier Outils IA & Business<span class="check"></span></button>
+  </div>
+</nav>
+
+<main id="main">
+
+  <div class="hero-course" id="module-0">
+    <span class="badge">Parcours Zéro → Expert · 8 modules</span>
+    <h1 style="margin-top:16px;">Devenez Expert en<br>Intelligence Artificielle</h1>
+    <p>Cours complet pour débutants : de zéro aux concepts avancés, en passant par la pratique (TP guidés) et un quiz de validation à la fin de chaque module. L'atelier final vous arme avec 35+ outils IA pour produire, automatiser et monétiser.</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="val">8</div><div class="lbl">Modules</div></div>
+      <div class="stat"><div class="val">3</div><div class="lbl">Mois</div></div>
+      <div class="stat"><div class="val">16</div><div class="lbl">TP + Quiz</div></div>
+      <div class="stat"><div class="val">35+</div><div class="lbl">Outils IA</div></div>
+    </div>
+  </div>
+
+  <div id="content">
+
+  <!-- =========================================================
+       MODULE 1 — FONDAMENTAUX
+  ========================================================== -->
+  <div class="module" id="module-1">
+    <div class="module-header">
+      <div class="module-num">MODULE 01</div>
+      <div>
+        <h2>Fondamentaux de l'Intelligence Artificielle</h2>
+        <p class="module-subtitle">Comprendre ce qu'est l'IA, son histoire et ses grands domaines d'application.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>1.1 Qu'est-ce que l'Intelligence Artificielle ?</h3>
+      <div class="info-box def">
+        <strong>Définition</strong>
+        L'Intelligence Artificielle (IA) est un ensemble de techniques qui permettent aux machines d'imiter des comportements intelligents humains : comprendre le langage, reconnaître des images, prendre des décisions, apprendre de l'expérience.
+      </div>
+      <p>Imaginez un enfant qui apprend à reconnaître un chat : il voit des dizaines de photos de chats, et son cerveau crée peu à peu un « modèle mental » du chat. L'IA fonctionne de la même manière, mais avec des algorithmes mathématiques au lieu de neurones biologiques.</p>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>IA Faible (Narrow AI)</h4><p>Spécialisée dans une seule tâche. Ex : recommandations YouTube, filtre spam, reconnaissance faciale.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>IA Générale (AGI)</h4><p>Capable de raisonner sur n'importe quel sujet comme un humain. Encore théorique aujourd'hui.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>IA Forte (Super IA)</h4><p>Surpasse l'humain dans tous les domaines. Sujet de science-fiction pour l'instant.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>1.2 Histoire de l'Intelligence Artificielle</h3>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div>
+          <div class="tl-content"><div class="tl-year">1950</div><div class="tl-title">Test de Turing — Alan Turing</div>
+          <div class="tl-desc">Turing pose la question fondamentale : « Les machines peuvent-elles penser ? » et propose un test pour évaluer l'intelligence des machines.</div></div></div>
+        <div class="tl-item"><div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div>
+          <div class="tl-content"><div class="tl-year">1956</div><div class="tl-title">Conférence de Dartmouth — Naissance officielle</div>
+          <div class="tl-desc">Le terme « Intelligence Artificielle » est inventé. Les chercheurs pensaient résoudre le problème en quelques mois... ils avaient tort !</div></div></div>
+        <div class="tl-item"><div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div>
+          <div class="tl-content"><div class="tl-year">1997</div><div class="tl-title">Deep Blue bat Kasparov aux échecs</div>
+          <div class="tl-desc">IBM crée une machine qui bat le champion du monde d'échecs. Grande victoire symbolique pour l'IA.</div></div></div>
+        <div class="tl-item"><div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div>
+          <div class="tl-content"><div class="tl-year">2012</div><div class="tl-title">Révolution du Deep Learning</div>
+          <div class="tl-desc">AlexNet révolutionne la reconnaissance d'image avec les réseaux de neurones profonds. C'est le début de l'ère moderne.</div></div></div>
+        <div class="tl-item"><div class="tl-line"><div class="tl-dot"></div></div>
+          <div class="tl-content"><div class="tl-year">2022-2026</div><div class="tl-title">ChatGPT & LLMs — L'IA grand public</div>
+          <div class="tl-desc">Les modèles de langage comme GPT, Gemini et Claude rendent l'IA accessible à tous. L'Afrique entre pleinement dans l'ère de l'IA.</div></div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>1.3 Domaines d'application de l'IA</h3>
+      <p>L'IA transforme presque tous les secteurs. Voici les plus importants :</p>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>Santé</h4><p>Diagnostic médical par image, découverte de médicaments, prédiction d'épidémies.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Agriculture</h4><p>Détection de maladies des plantes, optimisation des récoltes, prévisions météo agricoles. Très pertinent au Bénin !</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Finance</h4><p>Détection de fraude, trading algorithmique, scoring de crédit, mobile money intelligent.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Transport</h4><p>Véhicules autonomes, optimisation des routes, maintenance prédictive des moteurs.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Éducation</h4><p>Tuteurs intelligents, personnalisation de l'apprentissage, correction automatique.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Environnement</h4><p>Prévision climatique, surveillance de la déforestation, gestion de l'énergie.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>1.4 Approfondissement : des règles expertes au Deep Learning</h3>
+      <span class="adv-badge">Niveau avancé</span>
+      <p>L'IA n'a pas commencé avec le Machine Learning. Pendant 40 ans (1950-1990), l'approche dominante était <strong>l'IA symbolique</strong> : des experts humains écrivaient des milliers de règles « si... alors... » (systèmes experts). Cette approche a atteint ses limites face à la complexité du monde réel — impossible d'écrire une règle pour chaque cas. Le Machine Learning puis le Deep Learning ont inversé la logique : au lieu d'écrire les règles, on les fait <em>apprendre</em> à partir de données.</p>
+      <table>
+        <thead><tr><th>Terme technique</th><th>Définition précise</th></tr></thead>
+        <tbody>
+          <tr><td>Paramètres</td><td>Les valeurs internes (poids) que le modèle ajuste pendant l'entraînement pour minimiser ses erreurs.</td></tr>
+          <tr><td>Hyperparamètres</td><td>Les réglages choisis par le développeur AVANT l'entraînement (nombre de couches, taux d'apprentissage, epochs...).</td></tr>
+          <tr><td>Fonction de coût (loss)</td><td>Mesure l'écart entre la prédiction du modèle et la vraie valeur. L'entraînement cherche à la minimiser.</td></tr>
+          <tr><td>Inférence</td><td>Le moment où un modèle déjà entraîné fait une prédiction sur une nouvelle donnée (contraire de l'entraînement).</td></tr>
+          <tr><td>Généralisation</td><td>La capacité d'un modèle à bien fonctionner sur des données jamais vues, pas seulement sur son jeu d'entraînement.</td></tr>
+        </tbody>
+      </table>
+      <div class="info-box def"><strong>IA symbolique vs. IA connexionniste</strong> L'IA symbolique manipule des règles et symboles explicites (logique, arbres de décision manuels). L'IA connexionniste (réseaux de neurones) apprend des représentations à partir de données brutes, sans règles écrites à la main. Les systèmes modernes (ChatGPT, Claude) combinent souvent les deux : un cœur connexionniste, encadré par des règles symboliques de sécurité.</div>
+    </div>
+
+    <div class="resources-box">
+      <h4>📚 Pour aller plus loin</h4>
+      <ul>
+        <li><a href="https://www.elementsofai.com/" target="_blank" rel="noopener">Elements of AI</a> — cours gratuit de l'Université d'Helsinki, la meilleure introduction non-technique à l'IA.
+          <span class="r-desc">Idéal pour consolider le vocabulaire et l'histoire avant d'attaquer le Module 2.</span></li>
+        <li><a href="https://www.3blue1brown.com/topics/neural-networks" target="_blank" rel="noopener">3Blue1Brown — Neural Networks</a> — série de vidéos qui visualisent intuitivement le fonctionnement d'un réseau de neurones.
+          <span class="r-desc">À regarder avant le Module 3 pour préparer le terrain.</span></li>
+      </ul>
+    </div>
+
+    <!-- TP 1 -->
+    <div class="tp-box">
+      <div class="tp-head"><div class="tp-icon">TP</div><div><h4>Travaux Pratiques — Module 1</h4><span>Premiers pas avec l'IA grand public</span></div></div>
+      <p class="goal">Objectif : découvrir concrètement les capacités d'un assistant IA et relier la théorie à des cas d'usage béninois.</p>
+      <ol class="tp-steps">
+        <li>Créez un compte gratuit sur <strong>claude.ai</strong> ou <strong>chat.openai.com</strong>.</li>
+        <li>Posez cette question : « Explique-moi la différence entre IA faible et IA générale avec 3 exemples africains. »</li>
+        <li>Listez 3 domaines d'application de l'IA particulièrement utiles pour le Bénin (agriculture, santé, éducation, etc.) et justifiez chaque choix en 2 phrases.</li>
+        <li>Placez sur une frise chronologique personnelle (papier ou Google Docs) les 5 dates clés vues dans ce module.</li>
+      </ol>
+      <div class="tp-check" data-module="1">
+        <input type="checkbox" id="tp1"><label for="tp1">J'ai réalisé ce TP</label><span class="done-msg">✓ TP validé</span>
+      </div>
+    </div>
+
+    <!-- Quiz 1 -->
+    <div class="quiz" data-module="1">
+      <div class="quiz-title"><h4>Quiz — Module 1</h4><span class="score"></span></div>
+      <div class="quiz-question">
+        <div class="quiz-q">1. Quel chercheur a inventé le « Test de Turing » ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Albert Einstein</div>
+          <div class="quiz-opt" data-correct="true">Alan Turing</div>
+          <div class="quiz-opt" data-correct="false">John McCarthy</div>
+          <div class="quiz-opt" data-correct="false">Elon Musk</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">2. En quelle année le terme « Intelligence Artificielle » est-il officiellement né (conférence de Dartmouth) ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">1946</div>
+          <div class="quiz-opt" data-correct="true">1956</div>
+          <div class="quiz-opt" data-correct="false">1997</div>
+          <div class="quiz-opt" data-correct="false">2012</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">3. Laquelle de ces applications illustre le mieux l'IA appliquée à l'agriculture béninoise ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Trading algorithmique</div>
+          <div class="quiz-opt" data-correct="true">Détection de maladies des plantes par photo</div>
+          <div class="quiz-opt" data-correct="false">Véhicules autonomes</div>
+          <div class="quiz-opt" data-correct="false">Reconnaissance faciale</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-result"><span class="msg"></span><button class="quiz-retry">Réessayer</button></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODULE 2 — MACHINE LEARNING
+  ========================================================== -->
+  <div class="module" id="module-2">
+    <div class="module-header">
+      <div class="module-num">MODULE 02</div>
+      <div><h2>Machine Learning</h2><p class="module-subtitle">Comment les machines apprennent-elles à partir des données ?</p></div>
+    </div>
+
+    <div class="section">
+      <h3>2.1 Qu'est-ce que le Machine Learning ?</h3>
+      <div class="info-box def"><strong>Définition</strong>
+        Le Machine Learning (ML) ou « apprentissage automatique » est une branche de l'IA où l'on ne programme pas explicitement les règles. On donne des données à l'algorithme, et il trouve les règles tout seul.
+      </div>
+      <p><strong>Analogie :</strong> pour apprendre à distinguer un manguier d'un oranger :</p>
+      <p><strong>Sans ML :</strong> on écrit des règles manuellement (« si le fruit est orange et rond, c'est un oranger... »).</p>
+      <p><strong>Avec ML :</strong> on montre 10 000 photos de chaque arbre, puis on laisse l'algorithme détecter les patterns.</p>
+      <h4>Les 3 types d'apprentissage</h4>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>Supervisé</h4><p>On donne des données + les réponses correctes (labels). L'algorithme apprend la relation données → réponse.</p><div class="tags"><span class="tag">Classification</span><span class="tag">Régression</span></div></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Non supervisé</h4><p>On donne seulement les données, sans réponses. L'algorithme trouve lui-même des structures cachées.</p><div class="tags"><span class="tag">Clustering</span><span class="tag">Réduction dim.</span></div></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Par renforcement</h4><p>L'algorithme apprend par essais/erreurs en recevant des récompenses ou punitions. Comme un jeu vidéo !</p><div class="tags"><span class="tag">Robotique</span><span class="tag">Jeux</span></div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>2.2 Algorithmes essentiels</h3>
+      <h4>Régression Linéaire</h4>
+      <p>Prédire une valeur numérique (ex : prix d'une maison) à partir d'autres variables. C'est le « Bonjour Monde » du ML !</p>
+      <div class="code-block" data-lang="Python"><span class="cm"># Exemple simple : prédire le prix d'un téléphone</span>
+<span class="kw">from</span> sklearn.linear_model <span class="kw">import</span> LinearRegression
+<span class="kw">import</span> numpy <span class="kw">as</span> np
+
+<span class="cm"># Données d'entraînement [RAM en Go] → [Prix en FCFA]</span>
+X = np.array([[2], [4], [6], [8], [12]])
+y = np.array([50000, 80000, 120000, 160000, 230000])
+
+<span class="cm"># Créer et entraîner le modèle</span>
+modele = <span class="fn">LinearRegression</span>()
+modele.<span class="fn">fit</span>(X, y)
+
+<span class="cm"># Prédire le prix d'un téléphone avec 10 Go de RAM</span>
+prix_predit = modele.<span class="fn">predict</span>([[10]])
+<span class="fn">print</span>(<span class="str">f"Prix estimé : {prix_predit[0]:.0f} FCFA"</span>)
+<span class="cm"># Résultat : Prix estimé ≈ 195000 FCFA</span></div>
+
+      <h4>Classification avec K-Nearest Neighbors (KNN)</h4>
+      <p>Pour classer un élément, on regarde ses « K voisins les plus proches » et on vote à la majorité. Très intuitif !</p>
+      <div class="code-block" data-lang="Python"><span class="cm"># Exemple : classifier si un email est spam ou non</span>
+<span class="kw">from</span> sklearn.neighbors <span class="kw">import</span> KNeighborsClassifier
+
+<span class="cm"># Features : [nb_mots, nb_liens, nb_majuscules]</span>
+X_train = [[50, 2, 3], [200, 15, 50], [30, 1, 2], [180, 20, 80]]
+y_train = [<span class="num">0</span>, <span class="num">1</span>, <span class="num">0</span>, <span class="num">1</span>] <span class="cm"># 0=normal, 1=spam</span>
+
+modele = <span class="fn">KNeighborsClassifier</span>(n_neighbors=<span class="num">3</span>)
+modele.<span class="fn">fit</span>(X_train, y_train)
+
+<span class="cm"># Un email avec 150 mots, 12 liens, 40 majuscules</span>
+prediction = modele.<span class="fn">predict</span>([[150, 12, 40]])
+<span class="fn">print</span>(<span class="str">"Spam !"</span> <span class="kw">if</span> prediction[<span class="num">0</span>] == <span class="num">1</span> <span class="kw">else</span> <span class="str">"Email normal"</span>)</div>
+    </div>
+
+    <div class="section">
+      <h3>2.3 Concepts clés du ML</h3>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>Dataset (jeu de données)</h4><p>L'ensemble des exemples utilisés pour entraîner le modèle. Plus c'est grand et varié, mieux c'est.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Entraînement / Test</h4><p>On divise les données : ~80% pour entraîner, ~20% pour tester si le modèle généralise bien.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Overfitting</h4><p>Le modèle « mémorise » les données d'entraînement au lieu d'apprendre les vrais patterns. Il échoue sur de nouvelles données.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Underfitting</h4><p>Le modèle est trop simple pour capturer la complexité des données. Mauvaise performance partout.</p></div>
+      </div>
+      <div class="info-box tip"><strong>Astuce</strong>
+        La règle d'or : votre modèle doit bien performer sur des données qu'il n'a JAMAIS vues pendant l'entraînement. C'est comme un examen — apprendre par cœur le corrigé ne sert à rien si les questions changent !
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>2.4 Approfondissement : comment un modèle apprend réellement</h3>
+      <span class="adv-badge">Niveau avancé</span>
+      <p>Entraîner un modèle, ce n'est pas magique : c'est un algorithme d'optimisation qui ajuste les paramètres pas à pas pour réduire une <strong>fonction de coût</strong>. L'algorithme le plus courant s'appelle la <strong>descente de gradient</strong>.</p>
+      <h4>La descente de gradient, en une image</h4>
+      <p>Imaginez que vous êtes dans le brouillard sur une colline et que vous cherchez le point le plus bas. À chaque pas, vous regardez la pente sous vos pieds (le <em>gradient</em>) et vous avancez dans la direction qui descend le plus. Le <strong>taux d'apprentissage</strong> (learning rate) contrôle la taille de vos pas : trop grand, vous risquez de sauter par-dessus le minimum ; trop petit, l'entraînement est très lent.</p>
+      <div class="code-block" data-lang="Python"><span class="cm"># Évaluer un modèle correctement : split + validation croisée</span>
+<span class="kw">from</span> sklearn.model_selection <span class="kw">import</span> train_test_split, cross_val_score
+<span class="kw">from</span> sklearn.metrics <span class="kw">import</span> classification_report, confusion_matrix
+
+<span class="cm"># 1. Séparer entraînement (80%) et test (20%)</span>
+X_train, X_test, y_train, y_test = <span class="fn">train_test_split</span>(X, y, test_size=<span class="num">0.2</span>, random_state=<span class="num">42</span>)
+
+<span class="cm"># 2. Validation croisée en 5 blocs (k-fold) pour une évaluation plus fiable</span>
+scores = <span class="fn">cross_val_score</span>(modele, X_train, y_train, cv=<span class="num">5</span>)
+<span class="fn">print</span>(<span class="str">f"Précision moyenne : {scores.mean():.2%} (+/- {scores.std():.2%})"</span>)
+
+<span class="cm"># 3. Rapport détaillé sur le jeu de test</span>
+y_pred = modele.<span class="fn">predict</span>(X_test)
+<span class="fn">print</span>(<span class="fn">classification_report</span>(y_test, y_pred))
+<span class="fn">print</span>(<span class="fn">confusion_matrix</span>(y_test, y_pred))</div>
+      <h4>Les métriques qui comptent vraiment</h4>
+      <table>
+        <thead><tr><th>Métrique</th><th>Répond à la question</th><th>Utile quand...</th></tr></thead>
+        <tbody>
+          <tr><td>Précision (accuracy)</td><td>Combien de prédictions sont correctes au total ?</td><td>Classes équilibrées</td></tr>
+          <tr><td>Precision</td><td>Sur ce que j'ai prédit « positif », combien le sont vraiment ?</td><td>Coût élevé des faux positifs (ex : spam)</td></tr>
+          <tr><td>Rappel (recall)</td><td>Sur tous les vrais positifs, combien ai-je détectés ?</td><td>Coût élevé des faux négatifs (ex : diagnostic médical)</td></tr>
+          <tr><td>F1-score</td><td>Compromis entre precision et rappel</td><td>Classes déséquilibrées</td></tr>
+          <tr><td>RMSE</td><td>Quelle est l'erreur moyenne en régression ?</td><td>Prédiction de valeurs numériques</td></tr>
+        </tbody>
+      </table>
+      <div class="info-box warn"><strong>Le compromis biais-variance</strong> Un modèle avec un <strong>biais</strong> élevé est trop simple (underfitting). Un modèle avec une <strong>variance</strong> élevée colle trop aux données d'entraînement (overfitting). Le meilleur modèle trouve l'équilibre — c'est tout l'art du réglage des hyperparamètres.</div>
+    </div>
+
+    <div class="resources-box">
+      <h4>📚 Pour aller plus loin</h4>
+      <ul>
+        <li><a href="https://www.deeplearning.ai/courses/machine-learning-specialization/" target="_blank" rel="noopener">Machine Learning Specialization — Andrew Ng</a> — la référence mondiale, gratuite en mode audit.
+          <span class="r-desc">Formalise mathématiquement tout ce qui est vu dans ce module.</span></li>
+        <li><a href="https://scikit-learn.org/stable/user_guide.html" target="_blank" rel="noopener">Documentation officielle scikit-learn</a> — guide complet de tous les algorithmes ML classiques.
+          <span class="r-desc">À garder ouvert pendant vos TP : exemples de code pour chaque algorithme.</span></li>
+      </ul>
+    </div>
+
+    <div class="tp-box">
+      <div class="tp-head"><div class="tp-icon">TP</div><div><h4>Travaux Pratiques — Module 2</h4><span>Entraîner votre premier modèle</span></div></div>
+      <p class="goal">Objectif : exécuter réellement un modèle de Machine Learning et observer ses prédictions.</p>
+      <ol class="tp-steps">
+        <li>Ouvrez <strong>Google Colab</strong> (colab.research.google.com, gratuit avec un compte Google).</li>
+        <li>Copiez le code de régression linéaire ci-dessus dans une cellule et exécutez-le.</li>
+        <li>Modifiez les données <code>X</code> et <code>y</code> avec 5 exemples de votre choix (ex : superficie → loyer). Relancez la prédiction.</li>
+        <li>Copiez le code KNN, changez les valeurs de test et observez si la prédiction change.</li>
+        <li>En 2-3 phrases, expliquez avec vos mots ce qu'est l'overfitting, à partir de l'analogie de l'examen.</li>
+      </ol>
+      <div class="tp-check" data-module="2"><input type="checkbox" id="tp2"><label for="tp2">J'ai réalisé ce TP</label><span class="done-msg">✓ TP validé</span></div>
+    </div>
+
+    <div class="quiz" data-module="2">
+      <div class="quiz-title"><h4>Quiz — Module 2</h4><span class="score"></span></div>
+      <div class="quiz-question">
+        <div class="quiz-q">1. Dans quel type d'apprentissage donne-t-on des données SANS les réponses correctes ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Apprentissage supervisé</div>
+          <div class="quiz-opt" data-correct="true">Apprentissage non supervisé</div>
+          <div class="quiz-opt" data-correct="false">Apprentissage par renforcement</div>
+          <div class="quiz-opt" data-correct="false">Apprentissage profond</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">2. Quel algorithme classe un élément en votant selon ses « K voisins les plus proches » ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Régression linéaire</div>
+          <div class="quiz-opt" data-correct="true">K-Nearest Neighbors (KNN)</div>
+          <div class="quiz-opt" data-correct="false">Réseau de neurones</div>
+          <div class="quiz-opt" data-correct="false">Transformer</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">3. Que se passe-t-il en cas d'overfitting ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Le modèle est trop simple pour apprendre</div>
+          <div class="quiz-opt" data-correct="true">Le modèle mémorise les données d'entraînement et échoue sur de nouvelles données</div>
+          <div class="quiz-opt" data-correct="false">Le modèle s'exécute trop lentement</div>
+          <div class="quiz-opt" data-correct="false">Le dataset est trop petit</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-result"><span class="msg"></span><button class="quiz-retry">Réessayer</button></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODULE 3 — DEEP LEARNING
+  ========================================================== -->
+  <div class="module" id="module-3">
+    <div class="module-header">
+      <div class="module-num">MODULE 03</div>
+      <div><h2>Deep Learning</h2><p class="module-subtitle">Les réseaux de neurones artificiels qui imitent le cerveau humain.</p></div>
+    </div>
+
+    <div class="section">
+      <h3>3.1 Qu'est-ce qu'un réseau de neurones ?</h3>
+      <p>Un réseau de neurones artificiel s'inspire du cerveau humain. Votre cerveau a ~86 milliards de neurones connectés entre eux. Un réseau de neurones artificiel en a beaucoup moins, mais fonctionne sur le même principe : des nœuds connectés qui transmettent des signaux.</p>
+      <div class="nn-diagram">
+        <h4 style="color:var(--muted);font-size:12px;margin-bottom:20px;font-weight:600;letter-spacing:1px;text-transform:uppercase;">Architecture d'un réseau de neurones</h4>
+        <div class="nn-layers">
+          <div class="nn-layer"><div class="nn-node"></div><div class="nn-node"></div><div class="nn-node"></div><div class="nn-label">Entrée</div></div>
+          <div class="nn-arrow"></div>
+          <div class="nn-layer"><div class="nn-node" style="background:linear-gradient(135deg,#7c3aed,#3b82f6)"></div><div class="nn-node" style="background:linear-gradient(135deg,#7c3aed,#3b82f6)"></div><div class="nn-node" style="background:linear-gradient(135deg,#7c3aed,#3b82f6)"></div><div class="nn-node" style="background:linear-gradient(135deg,#7c3aed,#3b82f6)"></div><div class="nn-label">Caché 1</div></div>
+          <div class="nn-arrow"></div>
+          <div class="nn-layer"><div class="nn-node" style="background:linear-gradient(135deg,#0891b2,#06b6d4)"></div><div class="nn-node" style="background:linear-gradient(135deg,#0891b2,#06b6d4)"></div><div class="nn-node" style="background:linear-gradient(135deg,#0891b2,#06b6d4)"></div><div class="nn-node" style="background:linear-gradient(135deg,#0891b2,#06b6d4)"></div><div class="nn-label">Caché 2</div></div>
+          <div class="nn-arrow"></div>
+          <div class="nn-layer"><div class="nn-node" style="background:linear-gradient(135deg,#d97706,#f59e0b)"></div><div class="nn-node" style="background:linear-gradient(135deg,#d97706,#f59e0b)"></div><div class="nn-label">Sortie</div></div>
+        </div>
+        <p style="color:var(--muted);font-size:12.5px;margin-top:18px;">Le signal entre par la gauche, traverse les couches cachées, et ressort par la droite sous forme de prédiction.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>3.2 Les principaux types de réseaux</h3>
+      <table>
+        <thead><tr><th>Réseau</th><th>Abréviation</th><th>Spécialité</th><th>Exemple d'usage</th></tr></thead>
+        <tbody>
+          <tr><td>Réseau Dense / Fully Connected</td><td>DNN</td><td>Données tabulaires</td><td>Prédiction de prix</td></tr>
+          <tr><td>Réseau de Neurones Convolutifs</td><td>CNN</td><td>Images</td><td>Reconnaissance faciale</td></tr>
+          <tr><td>Réseau Récurrent</td><td>RNN / LSTM</td><td>Séquences, texte, temps</td><td>Traduction, prévision météo</td></tr>
+          <tr><td>Transformer</td><td>—</td><td>Langage, vision</td><td>ChatGPT, DALL·E, Gemini</td></tr>
+          <tr><td>GAN</td><td>Adversarial</td><td>Génération de contenu</td><td>Images réalistes, deepfakes</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>3.3 Construire un premier réseau avec Keras</h3>
+      <div class="info-box warn"><strong>Prérequis</strong> Installer les bibliothèques : <code>pip install tensorflow keras numpy</code></div>
+      <div class="code-block" data-lang="Python"><span class="cm"># Réseau de neurones pour classifier des chiffres manuscrits (MNIST)</span>
+<span class="kw">import</span> tensorflow <span class="kw">as</span> tf
+<span class="kw">from</span> tensorflow.keras <span class="kw">import</span> layers, models
+
+<span class="cm"># 1. Charger les données</span>
+(X_train, y_train), (X_test, y_test) = tf.keras.datasets.mnist.<span class="fn">load_data</span>()
+
+<span class="cm"># 2. Normaliser (pixels entre 0 et 1)</span>
+X_train = X_train / <span class="num">255.0</span>
+X_test = X_test / <span class="num">255.0</span>
+
+<span class="cm"># 3. Construire le réseau</span>
+modele = models.<span class="fn">Sequential</span>([
+    layers.<span class="fn">Flatten</span>(input_shape=(<span class="num">28</span>, <span class="num">28</span>)),   <span class="cm"># Aplatir l'image 28x28</span>
+    layers.<span class="fn">Dense</span>(<span class="num">128</span>, activation=<span class="str">'relu'</span>),      <span class="cm"># Couche cachée</span>
+    layers.<span class="fn">Dropout</span>(<span class="num">0.2</span>),                     <span class="cm"># Éviter l'overfitting</span>
+    layers.<span class="fn">Dense</span>(<span class="num">10</span>, activation=<span class="str">'softmax'</span>)    <span class="cm"># 10 classes (0-9)</span>
+])
+
+<span class="cm"># 4. Compiler</span>
+modele.<span class="fn">compile</span>(optimizer=<span class="str">'adam'</span>, loss=<span class="str">'sparse_categorical_crossentropy'</span>, metrics=[<span class="str">'accuracy'</span>])
+
+<span class="cm"># 5. Entraîner</span>
+modele.<span class="fn">fit</span>(X_train, y_train, epochs=<span class="num">5</span>, validation_split=<span class="num">0.1</span>)
+
+<span class="cm"># 6. Évaluer</span>
+loss, accuracy = modele.<span class="fn">evaluate</span>(X_test, y_test)
+<span class="fn">print</span>(<span class="str">f"Précision : {accuracy*100:.1f}%"</span>)  <span class="cm"># ~98%</span></div>
+      <div class="info-box tip"><strong>Ce que fait ce code</strong> Ce réseau apprend à reconnaître les chiffres écrits à la main avec ~98% de précision, en examinant 60 000 exemples et en apprenant les patterns de chaque chiffre de 0 à 9 en quelques minutes !</div>
+    </div>
+
+    <div class="section">
+      <h3>3.4 Approfondissement : comment un réseau apprend (rétropropagation)</h3>
+      <span class="adv-badge">Niveau avancé</span>
+      <p>L'entraînement d'un réseau se déroule en deux passes répétées des milliers de fois :</p>
+      <div class="cards">
+        <div class="card"><div class="card-icon">→</div><h4>1. Forward pass</h4><p>Les données traversent le réseau de l'entrée vers la sortie, couche par couche, pour produire une prédiction.</p></div>
+        <div class="card"><div class="card-icon">←</div><h4>2. Backward pass (rétropropagation)</h4><p>On calcule l'erreur, puis on la propage en sens inverse pour savoir de combien ajuster CHAQUE poids du réseau.</p></div>
+      </div>
+      <h4>Fonctions d'activation : pourquoi et lesquelles ?</h4>
+      <p>Sans fonction d'activation, un réseau de neurones ne serait qu'une addition géante — incapable d'apprendre des patterns complexes (non linéaires). Chaque neurone applique une fonction d'activation à sa sortie :</p>
+      <table>
+        <thead><tr><th>Fonction</th><th>Formule / comportement</th><th>Utilisée pour</th></tr></thead>
+        <tbody>
+          <tr><td>ReLU</td><td>max(0, x) — simple et rapide</td><td>Couches cachées (standard actuel)</td></tr>
+          <tr><td>Sigmoid</td><td>Écrase entre 0 et 1</td><td>Sortie binaire (oui/non)</td></tr>
+          <tr><td>Softmax</td><td>Transforme en probabilités qui somment à 1</td><td>Sortie multi-classes</td></tr>
+          <tr><td>Tanh</td><td>Écrase entre -1 et 1</td><td>Réseaux récurrents (RNN/LSTM)</td></tr>
+        </tbody>
+      </table>
+      <h4>Optimiseurs : accélérer la descente de gradient</h4>
+      <p>Plutôt qu'une descente de gradient simple, les frameworks modernes utilisent des optimiseurs plus intelligents : <strong>Adam</strong> (le plus utilisé aujourd'hui, adapte automatiquement le taux d'apprentissage), <strong>SGD avec momentum</strong> (garde une « inertie » pour éviter de rester bloqué), <strong>RMSprop</strong> (efficace sur les RNN).</p>
+      <div class="info-box tip"><strong>Architectures avancées à connaître</strong> Les <strong>skip connections</strong> (ResNet) permettent d'entraîner des réseaux à des centaines de couches sans que le signal ne s'évanouisse. La <strong>batch normalization</strong> stabilise et accélère l'entraînement en normalisant les activations entre les couches.</div>
+    </div>
+
+    <div class="resources-box">
+      <h4>📚 Pour aller plus loin</h4>
+      <ul>
+        <li><a href="https://www.3blue1brown.com/topics/neural-networks" target="_blank" rel="noopener">3Blue1Brown — Neural Networks & Backpropagation</a> — la meilleure visualisation existante de la rétropropagation.
+          <span class="r-desc">Regardez les épisodes 3 et 4 pour comprendre le calcul du gradient.</span></li>
+        <li><a href="https://cs231n.stanford.edu/" target="_blank" rel="noopener">CS231n — Stanford</a> — cours universitaire complet et gratuit sur les réseaux de neurones et la vision par ordinateur.
+          <span class="r-desc">Niveau exigeant, mais c'est LA référence académique.</span></li>
+      </ul>
+    </div>
+
+    <div class="tp-box">
+      <div class="tp-head"><div class="tp-icon">TP</div><div><h4>Travaux Pratiques — Module 3</h4><span>Entraîner un réseau de neurones sur MNIST</span></div></div>
+      <p class="goal">Objectif : exécuter et faire varier un vrai réseau de neurones dans Google Colab.</p>
+      <ol class="tp-steps">
+        <li>Ouvrez Google Colab et créez un nouveau notebook.</li>
+        <li>Copiez-collez le code Keras/MNIST ci-dessus et exécutez-le (comptez 2-3 minutes d'entraînement).</li>
+        <li>Notez la précision obtenue après 5 epochs.</li>
+        <li>Changez <code>epochs=5</code> en <code>epochs=10</code>, relancez et comparez la précision.</li>
+        <li>Modifiez le nombre de neurones de la couche cachée (128 → 64), relancez et observez l'impact.</li>
+      </ol>
+      <div class="tp-check" data-module="3"><input type="checkbox" id="tp3"><label for="tp3">J'ai réalisé ce TP</label><span class="done-msg">✓ TP validé</span></div>
+    </div>
+
+    <div class="quiz" data-module="3">
+      <div class="quiz-title"><h4>Quiz — Module 3</h4><span class="score"></span></div>
+      <div class="quiz-question">
+        <div class="quiz-q">1. Quel type de réseau est le plus adapté pour analyser des images ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">RNN (Réseau Récurrent)</div>
+          <div class="quiz-opt" data-correct="true">CNN (Réseau Convolutif)</div>
+          <div class="quiz-opt" data-correct="false">GAN (Réseau Adversarial)</div>
+          <div class="quiz-opt" data-correct="false">DNN Dense basique</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">2. Quel type de réseau convient le mieux aux séquences (texte, séries temporelles) ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">CNN</div>
+          <div class="quiz-opt" data-correct="true">RNN / LSTM</div>
+          <div class="quiz-opt" data-correct="false">GAN</div>
+          <div class="quiz-opt" data-correct="false">Perceptron simple</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">3. À quoi sert la couche <code>Dropout</code> dans un réseau Keras ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Accélérer l'affichage graphique</div>
+          <div class="quiz-opt" data-correct="false">Augmenter la taille des images</div>
+          <div class="quiz-opt" data-correct="true">Réduire l'overfitting en désactivant aléatoirement des neurones</div>
+          <div class="quiz-opt" data-correct="false">Compresser le fichier du modèle</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-result"><span class="msg"></span><button class="quiz-retry">Réessayer</button></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODULE 4 — NLP
+  ========================================================== -->
+  <div class="module" id="module-4">
+    <div class="module-header">
+      <div class="module-num">MODULE 04</div>
+      <div><h2>NLP & Traitement du Langage Naturel</h2><p class="module-subtitle">Permettre aux machines de comprendre, analyser et générer du texte humain.</p></div>
+    </div>
+
+    <div class="section">
+      <h3>4.1 Introduction au NLP</h3>
+      <div class="info-box def"><strong>Définition</strong> Le NLP (Natural Language Processing) ou TAL (Traitement Automatique du Langage) est la branche de l'IA qui permet aux machines de comprendre le langage humain — français, anglais, fon, yoruba...</div>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>Analyse de sentiments</h4><p>Déterminer si un texte est positif, négatif ou neutre. Très utilisé pour analyser les avis clients.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Traduction automatique</h4><p>Google Translate, DeepL utilisent le NLP pour traduire entre des centaines de langues.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Chatbots</h4><p>Les assistants virtuels (Siri, Alexa, ChatGPT) comprennent et répondent grâce au NLP.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Résumé automatique</h4><p>Condenser un long document en quelques phrases clés automatiquement.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>4.2 Étapes du traitement du texte</h3>
+      <h4>Étape 1 — Tokenisation</h4>
+      <p>Découper le texte en unités (mots, sous-mots). C'est la première étape fondamentale.</p>
+      <div class="code-block" data-lang="Python"><span class="kw">import</span> nltk
+<span class="kw">from</span> nltk.tokenize <span class="kw">import</span> word_tokenize
+
+texte = <span class="str">"L'IA transforme l'Afrique en 2026 !"</span>
+tokens = <span class="fn">word_tokenize</span>(texte, language=<span class="str">'french'</span>)
+<span class="fn">print</span>(tokens)
+<span class="cm"># ['L', "'", 'IA', 'transforme', "l'", 'Afrique', 'en', '2026', '!']</span></div>
+
+      <h4>Étape 2 — Suppression des mots vides (stop words)</h4>
+      <div class="code-block" data-lang="Python"><span class="kw">from</span> nltk.corpus <span class="kw">import</span> stopwords
+
+mots_vides = <span class="fn">set</span>(stopwords.<span class="fn">words</span>(<span class="str">'french'</span>))
+<span class="cm"># {'le', 'la', 'les', 'de', 'du', 'en', 'et', ...}</span>
+
+tokens_filtres = [mot <span class="kw">for</span> mot <span class="kw">in</span> tokens <span class="kw">if</span> mot <span class="kw">not in</span> mots_vides]
+<span class="fn">print</span>(tokens_filtres)
+<span class="cm"># ['IA', 'transforme', 'Afrique', '2026', '!']</span></div>
+
+      <h4>Étape 3 — Analyse de sentiment avec Transformers</h4>
+      <div class="code-block" data-lang="Python"><span class="kw">from</span> transformers <span class="kw">import</span> pipeline
+
+<span class="cm"># Charger un modèle pré-entraîné</span>
+analyseur = <span class="fn">pipeline</span>(<span class="str">"sentiment-analysis"</span>)
+
+exemples = [
+    <span class="str">"Cette formation est excellente, j'adore apprendre l'IA !"</span>,
+    <span class="str">"Le cours est trop difficile et ennuyeux."</span>
+]
+
+<span class="kw">for</span> texte <span class="kw">in</span> exemples:
+    resultat = <span class="fn">analyseur</span>(texte)[<span class="num">0</span>]
+    <span class="fn">print</span>(<span class="str">f"Texte : {texte[:40]}..."</span>)
+    <span class="fn">print</span>(<span class="str">f"Sentiment : {resultat['label']} ({resultat['score']:.0%})\n"</span>)</div>
+    </div>
+
+    <div class="section">
+      <h3>4.3 Les Transformers & LLMs</h3>
+      <p>L'architecture <strong>Transformer</strong> (2017, Google) a révolutionné le NLP. Elle utilise un mécanisme d'<em>attention</em> qui permet au modèle de comprendre les relations entre tous les mots d'une phrase simultanément.</p>
+      <div class="info-box def"><strong>Grand Modèle de Langage (LLM)</strong> Un LLM (Large Language Model) est un Transformer entraîné sur des milliards de textes. Il peut comprendre et générer du texte de façon très naturelle. Exemples : GPT, Gemini, Claude, LLaMA, Mistral.</div>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>Attention Mechanism</h4><p>Permet au modèle de « regarder » toute la phrase à chaque étape pour comprendre le contexte global.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Pré-entraînement</h4><p>Entraîné sur des téraoctets de texte internet pour comprendre la langue. Prend des semaines sur des milliers de GPU.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Fine-tuning</h4><p>Adapter un modèle pré-entraîné à une tâche spécifique avec beaucoup moins de données.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>4.4 Approfondissement : Prompt Engineering et RAG</h3>
+      <span class="adv-badge">Niveau avancé</span>
+      <p>Utiliser un LLM efficacement est une compétence à part entière. Trois techniques distinctes, souvent confondues :</p>
+      <table>
+        <thead><tr><th>Technique</th><th>Principe</th><th>Quand l'utiliser</th></tr></thead>
+        <tbody>
+          <tr><td>Prompt Engineering</td><td>Formuler la question / les instructions de façon optimale, sans modifier le modèle</td><td>Toujours, en premier réflexe</td></tr>
+          <tr><td>RAG (Retrieval-Augmented Generation)</td><td>Injecter des documents pertinents dans le prompt via une recherche préalable</td><td>Répondre avec des données spécifiques/récentes (ex : documents internes d'une entreprise)</td></tr>
+          <tr><td>Fine-tuning</td><td>Ré-entraîner le modèle sur un jeu de données spécifique</td><td>Adapter le style ou un comportement très spécifique, coûteux</td></tr>
+        </tbody>
+      </table>
+      <h4>Techniques de prompting avancées</h4>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>Zero-shot</h4><p>Poser directement la question sans exemple. Fonctionne pour les tâches simples.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Few-shot</h4><p>Donner 2-3 exemples de la tâche avant la vraie question. Améliore fortement la précision.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Chain-of-Thought</h4><p>Demander au modèle de « réfléchir étape par étape ». Redoutable pour le raisonnement et les calculs.</p></div>
+      </div>
+      <h4>Comment fonctionne le RAG concrètement</h4>
+      <p>Le RAG transforme vos documents en vecteurs numériques (<strong>embeddings</strong>) stockés dans une base vectorielle. À chaque question, on recherche les passages les plus proches sémantiquement, puis on les insère dans le prompt envoyé au LLM. C'est ce qui permet à un chatbot d'entreprise de répondre avec VOS documents, sans ré-entraîner le modèle.</p>
+      <div class="code-block" data-lang="Python"><span class="cm"># Squelette d'un pipeline RAG minimal</span>
+<span class="kw">from</span> sentence_transformers <span class="kw">import</span> SentenceTransformer
+<span class="kw">import</span> numpy <span class="kw">as</span> np
+
+encodeur = <span class="fn">SentenceTransformer</span>(<span class="str">'paraphrase-multilingual-MiniLM-L12-v2'</span>)
+
+<span class="cm"># 1. Encoder les documents en vecteurs</span>
+documents = [<span class="str">"Le taux de formation est de 200 000 FCFA."</span>, <span class="str">"La durée du programme est de 3 mois."</span>]
+vecteurs_docs = encodeur.<span class="fn">encode</span>(documents)
+
+<span class="cm"># 2. Encoder la question et trouver le document le plus proche</span>
+question = <span class="str">"Combien coûte la formation ?"</span>
+vecteur_question = encodeur.<span class="fn">encode</span>([question])
+similarites = np.<span class="fn">dot</span>(vecteurs_docs, vecteur_question.T)
+meilleur_doc = documents[np.<span class="fn">argmax</span>(similarites)]
+
+<span class="cm"># 3. Injecter ce document dans le prompt envoyé au LLM</span>
+prompt = <span class="str">f"Contexte : {meilleur_doc}\nQuestion : {question}\nRéponds uniquement à partir du contexte."</span></div>
+    </div>
+
+    <div class="resources-box">
+      <h4>📚 Pour aller plus loin</h4>
+      <ul>
+        <li><a href="https://huggingface.co/learn/nlp-course" target="_blank" rel="noopener">Hugging Face NLP Course</a> — cours gratuit et pratique sur les Transformers, du tokenizer au fine-tuning.
+          <span class="r-desc">Complète parfaitement le code Python vu dans ce module.</span></li>
+        <li><a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener">« Attention Is All You Need » (2017)</a> — l'article de recherche original qui a introduit le Transformer.
+          <span class="r-desc">Pour comprendre l'architecture derrière GPT, Claude et Gemini à la source.</span></li>
+        <li><a href="https://www.promptingguide.ai/" target="_blank" rel="noopener">Prompt Engineering Guide</a> — guide de référence sur toutes les techniques de prompting.
+          <span class="r-desc">Utile immédiatement pour le Module 8 (atelier outils IA).</span></li>
+      </ul>
+    </div>
+
+    <div class="tp-box">
+      <div class="tp-head"><div class="tp-icon">TP</div><div><h4>Travaux Pratiques — Module 4</h4><span>Analyser un texte avec un LLM</span></div></div>
+      <p class="goal">Objectif : manipuler la tokenisation, l'analyse de sentiment et un LLM conversationnel.</p>
+      <ol class="tp-steps">
+        <li>Dans Google Colab, exécutez le code de tokenisation avec une phrase de votre choix en français.</li>
+        <li>Exécutez le code d'analyse de sentiment (<code>pipeline("sentiment-analysis")</code>) sur 2 avis fictifs sur votre formation.</li>
+        <li>Ouvrez Claude.ai ou ChatGPT et demandez : « Résume ce texte en 3 points et donne son sentiment global : [collez un texte de votre choix] ».</li>
+        <li>Comparez le résultat du modèle Python et celui du LLM conversationnel : lequel est plus précis, plus rapide ?</li>
+      </ol>
+      <div class="tp-check" data-module="4"><input type="checkbox" id="tp4"><label for="tp4">J'ai réalisé ce TP</label><span class="done-msg">✓ TP validé</span></div>
+    </div>
+
+    <div class="quiz" data-module="4">
+      <div class="quiz-title"><h4>Quiz — Module 4</h4><span class="score"></span></div>
+      <div class="quiz-question">
+        <div class="quiz-q">1. Que signifie « NLP » en intelligence artificielle ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Neural Learning Protocol</div>
+          <div class="quiz-opt" data-correct="false">New Language Platform</div>
+          <div class="quiz-opt" data-correct="true">Natural Language Processing</div>
+          <div class="quiz-opt" data-correct="false">Network Layer Processing</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">2. Quel mécanisme permet au Transformer de comprendre le contexte global d'une phrase ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Le dropout</div>
+          <div class="quiz-opt" data-correct="false">Le pooling</div>
+          <div class="quiz-opt" data-correct="true">Le mécanisme d'attention</div>
+          <div class="quiz-opt" data-correct="false">La convolution</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">3. Qu'est-ce que le « fine-tuning » ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Supprimer les mots vides d'un texte</div>
+          <div class="quiz-opt" data-correct="true">Adapter un modèle pré-entraîné à une tâche spécifique</div>
+          <div class="quiz-opt" data-correct="false">Traduire un texte automatiquement</div>
+          <div class="quiz-opt" data-correct="false">Découper un texte en tokens</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-result"><span class="msg"></span><button class="quiz-retry">Réessayer</button></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODULE 5 — VISION PAR ORDINATEUR
+  ========================================================== -->
+  <div class="module" id="module-5">
+    <div class="module-header">
+      <div class="module-num">MODULE 05</div>
+      <div><h2>Vision par Ordinateur</h2><p class="module-subtitle">Apprendre aux machines à « voir » et interpréter le monde visuel.</p></div>
+    </div>
+
+    <div class="section">
+      <h3>5.1 Introduction à la Vision par Ordinateur</h3>
+      <div class="info-box def"><strong>Définition</strong> La Computer Vision (CV) est la capacité d'une machine à analyser et comprendre des images ou vidéos. Pour un ordinateur, une image n'est qu'une matrice de nombres (valeurs de pixels). L'IA apprend à trouver des patterns dans ces nombres.</div>
+      <p>Une image couleur de 100×100 pixels = une matrice de 100×100×3 = <strong>30 000 nombres</strong>. Le CNN apprend quels patterns dans ces 30 000 nombres correspondent à un chat, un chien, ou une maladie des plantes !</p>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>Classification</h4><p>Dire ce que contient une image. « C'est un chat » ou « C'est un chien ».</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Détection d'objets</h4><p>Localiser et identifier plusieurs objets dans une image avec des boîtes englobantes.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Segmentation</h4><p>Délimiter pixel par pixel chaque objet dans l'image. Utilisé en médecine et en conduite autonome.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Reconnaissance faciale</h4><p>Identifier des personnes à partir de leur visage. Utilisé dans les téléphones et la sécurité.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>5.2 Comment fonctionne un CNN ?</h3>
+      <p>Un CNN (Convolutional Neural Network) utilise des <strong>filtres</strong> qui « glissent » sur l'image pour détecter des caractéristiques (bords, textures, formes) de plus en plus complexes couche par couche.</p>
+      <div class="info-box tip"><strong>Analogie avec la vision humaine</strong> Quand vous regardez un visage, votre cerveau détecte d'abord des bords et des contrastes, puis des formes (nez, yeux, bouche), puis reconnaît l'ensemble comme un visage. Le CNN fait exactement pareil, couche par couche !</div>
+      <div class="code-block" data-lang="Python"><span class="cm"># CNN pour classifier des images (chats vs chiens)</span>
+<span class="kw">from</span> tensorflow.keras <span class="kw">import</span> layers, models
+
+modele = models.<span class="fn">Sequential</span>([
+    <span class="cm"># Couche 1 : détecter les bords simples</span>
+    layers.<span class="fn">Conv2D</span>(<span class="num">32</span>, (<span class="num">3</span>,<span class="num">3</span>), activation=<span class="str">'relu'</span>, input_shape=(<span class="num">224</span>,<span class="num">224</span>,<span class="num">3</span>)),
+    layers.<span class="fn">MaxPooling2D</span>((<span class="num">2</span>,<span class="num">2</span>)),
+
+    <span class="cm"># Couche 2 : détecter des formes complexes</span>
+    layers.<span class="fn">Conv2D</span>(<span class="num">64</span>, (<span class="num">3</span>,<span class="num">3</span>), activation=<span class="str">'relu'</span>),
+    layers.<span class="fn">MaxPooling2D</span>((<span class="num">2</span>,<span class="num">2</span>)),
+
+    <span class="cm"># Couche 3 : patterns de haut niveau</span>
+    layers.<span class="fn">Conv2D</span>(<span class="num">128</span>, (<span class="num">3</span>,<span class="num">3</span>), activation=<span class="str">'relu'</span>),
+    layers.<span class="fn">GlobalAveragePooling2D</span>(),
+
+    <span class="cm"># Classification finale</span>
+    layers.<span class="fn">Dense</span>(<span class="num">64</span>, activation=<span class="str">'relu'</span>),
+    layers.<span class="fn">Dense</span>(<span class="num">1</span>, activation=<span class="str">'sigmoid'</span>)  <span class="cm"># 0=chat, 1=chien</span>
+])
+
+modele.<span class="fn">summary</span>()  <span class="cm"># Affiche l'architecture</span></div>
+    </div>
+
+    <div class="section">
+      <h3>5.3 Transfer Learning — Réutiliser l'intelligence</h3>
+      <p>Plutôt que d'entraîner un CNN depuis zéro (ce qui prend des semaines), on peut utiliser un modèle déjà entraîné sur des millions d'images et l'adapter à notre tâche. C'est le <strong>Transfer Learning</strong> !</p>
+      <div class="code-block" data-lang="Python"><span class="cm"># Utiliser MobileNetV2 pré-entraîné sur ImageNet</span>
+<span class="kw">from</span> tensorflow.keras.applications <span class="kw">import</span> MobileNetV2
+
+<span class="cm"># Charger le modèle pré-entraîné (sans la dernière couche)</span>
+base = <span class="fn">MobileNetV2</span>(weights=<span class="str">'imagenet'</span>, include_top=<span class="kw">False</span>, input_shape=(<span class="num">224</span>, <span class="num">224</span>, <span class="num">3</span>))
+base.trainable = <span class="kw">False</span>  <span class="cm"># Geler les poids existants</span>
+
+<span class="cm"># Ajouter notre propre classifieur</span>
+modele = models.<span class="fn">Sequential</span>([
+    base,
+    layers.<span class="fn">GlobalAveragePooling2D</span>(),
+    layers.<span class="fn">Dense</span>(<span class="num">256</span>, activation=<span class="str">'relu'</span>),
+    layers.<span class="fn">Dropout</span>(<span class="num">0.5</span>),
+    layers.<span class="fn">Dense</span>(<span class="num">5</span>, activation=<span class="str">'softmax'</span>)  <span class="cm"># 5 maladies de plantes</span>
+])
+<span class="fn">print</span>(<span class="str">"Modèle de détection de maladies des plantes prêt !"</span>)</div>
+      <div class="info-box tip"><strong>Application concrète au Bénin</strong> Avec ce code, vous pouvez créer une application mobile qui, en prenant une photo d'une plante de maïs ou d'igname, détecte automatiquement si elle est malade et suggère un traitement. Révolution pour l'agriculture béninoise !</div>
+    </div>
+
+    <div class="section">
+      <h3>5.4 Approfondissement : détection d'objets et augmentation de données</h3>
+      <span class="adv-badge">Niveau avancé</span>
+      <p>La classification (« qu'y a-t-il dans l'image ? ») n'est que le début. Les systèmes avancés doivent aussi <strong>localiser</strong> les objets.</p>
+      <h4>YOLO — You Only Look Once</h4>
+      <p>YOLO est la famille d'algorithmes de référence pour la détection d'objets en temps réel. Contrairement aux approches plus anciennes qui analysaient l'image en plusieurs passes, YOLO découpe l'image en grille et prédit en une seule passe la position (boîte englobante) et la classe de chaque objet — d'où son nom. C'est ce qui permet une détection en temps réel sur vidéo (surveillance, tri de récoltes, comptage de véhicules).</p>
+      <table>
+        <thead><tr><th>Métrique</th><th>Mesure</th></tr></thead>
+        <tbody>
+          <tr><td>IoU (Intersection over Union)</td><td>Chevauchement entre la boîte prédite et la vraie boîte — proche de 1 = très précis</td></tr>
+          <tr><td>mAP (mean Average Precision)</td><td>Précision moyenne de détection sur toutes les classes — métrique standard pour comparer les modèles</td></tr>
+        </tbody>
+      </table>
+      <h4>Augmentation de données</h4>
+      <p>Avec peu d'images (cas fréquent sur le terrain en Afrique), on peut artificiellement multiplier son dataset :</p>
+      <div class="code-block" data-lang="Python"><span class="cm"># Augmentation de données avec Keras</span>
+<span class="kw">from</span> tensorflow.keras.preprocessing.image <span class="kw">import</span> ImageDataGenerator
+
+generateur = <span class="fn">ImageDataGenerator</span>(
+    rotation_range=<span class="num">20</span>,       <span class="cm"># rotation aléatoire jusqu'à 20°</span>
+    width_shift_range=<span class="num">0.2</span>,   <span class="cm"># décalage horizontal</span>
+    zoom_range=<span class="num">0.2</span>,          <span class="cm"># zoom aléatoire</span>
+    horizontal_flip=<span class="kw">True</span>,     <span class="cm"># miroir horizontal</span>
+    brightness_range=[<span class="num">0.7</span>,<span class="num">1.3</span>] <span class="cm"># variations de luminosité (utile: photos prises au champ)</span>
+)
+<span class="cm"># Une seule photo de plante malade devient ainsi des dizaines de variantes d'entraînement</span></div>
+      <p>Pour la <strong>segmentation</strong> (délimiter précisément chaque pixel), l'architecture de référence est <strong>U-Net</strong>, largement utilisée en imagerie médicale et en agriculture de précision.</p>
+    </div>
+
+    <div class="resources-box">
+      <h4>📚 Pour aller plus loin</h4>
+      <ul>
+        <li><a href="https://cs231n.stanford.edu/" target="_blank" rel="noopener">CS231n — Stanford (Vision par ordinateur)</a> — cours de référence sur les CNN, la détection et la segmentation.
+          <span class="r-desc">Approfondit toutes les notions mathématiques de ce module.</span></li>
+        <li><a href="https://paperswithcode.com/task/object-detection" target="_blank" rel="noopener">Papers With Code — Object Detection</a> — état de l'art des modèles de détection, avec code source.
+          <span class="r-desc">Pour voir les architectures les plus récentes (YOLOv8+, DETR...).</span></li>
+      </ul>
+    </div>
+
+    <div class="tp-box">
+      <div class="tp-head"><div class="tp-icon">TP</div><div><h4>Travaux Pratiques — Module 5</h4><span>Classifier des images par transfer learning</span></div></div>
+      <p class="goal">Objectif : construire un classifieur d'images à partir d'un modèle pré-entraîné.</p>
+      <ol class="tp-steps">
+        <li>Dans Google Colab, copiez le code de transfer learning avec MobileNetV2.</li>
+        <li>Prenez (ou téléchargez) 10 photos de 2 catégories différentes (ex : feuille saine / feuille malade, ou 2 objets du quotidien).</li>
+        <li>Adaptez la dernière couche Dense au nombre de catégories réel (2 au lieu de 5).</li>
+        <li>Entraînez le modèle sur vos images et testez-le sur une photo qu'il n'a jamais vue.</li>
+        <li>Notez la précision obtenue et une piste d'amélioration (plus d'images, plus d'epochs...).</li>
+      </ol>
+      <div class="tp-check" data-module="5"><input type="checkbox" id="tp5"><label for="tp5">J'ai réalisé ce TP</label><span class="done-msg">✓ TP validé</span></div>
+    </div>
+
+    <div class="quiz" data-module="5">
+      <div class="quiz-title"><h4>Quiz — Module 5</h4><span class="score"></span></div>
+      <div class="quiz-question">
+        <div class="quiz-q">1. Qu'est-ce que le « Transfer Learning » ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Transférer des données d'un ordinateur à un autre</div>
+          <div class="quiz-opt" data-correct="false">Apprendre à partir de zéro sur de nouvelles données</div>
+          <div class="quiz-opt" data-correct="true">Réutiliser un modèle déjà entraîné et l'adapter à une nouvelle tâche</div>
+          <div class="quiz-opt" data-correct="false">Transférer un modèle vers le cloud</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">2. Qu'est-ce que la segmentation d'image ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Redimensionner une image</div>
+          <div class="quiz-opt" data-correct="true">Délimiter pixel par pixel chaque objet dans l'image</div>
+          <div class="quiz-opt" data-correct="false">Compresser une image en JPEG</div>
+          <div class="quiz-opt" data-correct="false">Ajouter des filtres Instagram</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">3. Combien de valeurs numériques représentent une image couleur de 100×100 pixels ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">100</div>
+          <div class="quiz-opt" data-correct="false">10 000</div>
+          <div class="quiz-opt" data-correct="true">30 000</div>
+          <div class="quiz-opt" data-correct="false">1 000 000</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-result"><span class="msg"></span><button class="quiz-retry">Réessayer</button></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODULE 6 — DÉPLOIEMENT
+  ========================================================== -->
+  <div class="module" id="module-6">
+    <div class="module-header">
+      <div class="module-num">MODULE 06</div>
+      <div><h2>Déploiement de Modèles IA</h2><p class="module-subtitle">Mettre vos modèles en production pour que le monde puisse les utiliser.</p></div>
+    </div>
+
+    <div class="section">
+      <h3>6.1 Du Notebook à la Production</h3>
+      <p>Un modèle entraîné dans un Jupyter Notebook n'est utile que si des utilisateurs réels peuvent s'en servir. Le <strong>déploiement</strong> est le processus qui transforme votre modèle en service utilisable.</p>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>API REST</h4><p>Exposer votre modèle via une API web. N'importe quelle application peut l'utiliser via HTTP.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Application mobile</h4><p>Intégrer le modèle dans une app Android/iOS. TensorFlow Lite permet de faire tourner l'IA sur le téléphone.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Cloud</h4><p>Héberger sur AWS, Google Cloud, Azure ou Hugging Face Spaces pour scaler automatiquement.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Interface Web</h4><p>Créer une démo web avec Gradio ou Streamlit en quelques lignes de Python.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>6.2 Créer une API avec FastAPI</h3>
+      <div class="code-block" data-lang="Python"><span class="cm"># api.py — API de classification de texte</span>
+<span class="kw">from</span> fastapi <span class="kw">import</span> FastAPI
+<span class="kw">from</span> pydantic <span class="kw">import</span> BaseModel
+<span class="kw">import</span> pickle
+
+<span class="cm"># Charger le modèle sauvegardé</span>
+<span class="kw">with</span> <span class="fn">open</span>(<span class="str">'modele_spam.pkl'</span>, <span class="str">'rb'</span>) <span class="kw">as</span> f:
+    modele = pickle.<span class="fn">load</span>(f)
+
+app = <span class="fn">FastAPI</span>(title=<span class="str">"API Détecteur de Spam"</span>)
+
+<span class="kw">class</span> <span class="fn">TexteInput</span>(BaseModel):
+    texte: str
+
+@app.<span class="fn">post</span>(<span class="str">"/predire"</span>)
+<span class="kw">def</span> <span class="fn">predire</span>(input: TexteInput):
+    prediction = modele.<span class="fn">predict</span>([input.texte])[<span class="num">0</span>]
+    <span class="kw">return</span> {
+        <span class="str">"texte"</span>: input.texte,
+        <span class="str">"resultat"</span>: <span class="str">"SPAM"</span> <span class="kw">if</span> prediction == <span class="num">1</span> <span class="kw">else</span> <span class="str">"Normal"</span>,
+        <span class="str">"confiance"</span>: <span class="str">"95%"</span>
+    }
+
+<span class="cm"># Lancer : uvicorn api:app --reload</span>
+<span class="cm"># Tester : http://localhost:8000/docs</span></div>
+    </div>
+
+    <div class="section">
+      <h3>6.3 Interface rapide avec Gradio</h3>
+      <div class="code-block" data-lang="Python"><span class="cm"># Interface utilisateur en 10 lignes !</span>
+<span class="kw">import</span> gradio <span class="kw">as</span> gr
+<span class="kw">import</span> tensorflow <span class="kw">as</span> tf
+<span class="kw">from</span> PIL <span class="kw">import</span> Image
+<span class="kw">import</span> numpy <span class="kw">as</span> np
+
+modele = tf.keras.models.<span class="fn">load_model</span>(<span class="str">'mon_modele.h5'</span>)
+classes = [<span class="str">'saine'</span>, <span class="str">'rouille'</span>, <span class="str">'mildiou'</span>, <span class="str">'brûlure'</span>]
+
+<span class="kw">def</span> <span class="fn">analyser_plante</span>(image):
+    img = np.<span class="fn">array</span>(image.<span class="fn">resize</span>((<span class="num">224</span>, <span class="num">224</span>))) / <span class="num">255.0</span>
+    pred = modele.<span class="fn">predict</span>(img[np.newaxis, ...])[<span class="num">0</span>]
+    <span class="kw">return</span> {c: <span class="fn">float</span>(p) <span class="kw">for</span> c, p <span class="kw">in</span> <span class="fn">zip</span>(classes, pred)}
+
+interface = gr.<span class="fn">Interface</span>(
+    fn=analyser_plante,
+    inputs=gr.<span class="fn">Image</span>(type=<span class="str">"pil"</span>, label=<span class="str">"Photo de la plante"</span>),
+    outputs=gr.<span class="fn">Label</span>(num_top_classes=<span class="num">3</span>),
+    title=<span class="str">"Détecteur de Maladies des Plantes"</span>,
+    description=<span class="str">"Téléchargez une photo de plante pour diagnostic IA"</span>
+)
+interface.<span class="fn">launch</span>(share=<span class="kw">True</span>)  <span class="cm"># share=True = URL publique !</span></div>
+      <div class="info-box tip"><strong>Partager votre projet</strong> <code>share=True</code> génère automatiquement une URL publique temporaire (72h). Parfait pour montrer votre projet à un client ou recruteur !</div>
+    </div>
+
+    <div class="section">
+      <h3>6.4 MLOps — l'IA en entreprise</h3>
+      <p>Le MLOps (Machine Learning Operations) combine le développement ML avec les pratiques DevOps pour gérer les modèles en production de façon fiable et scalable.</p>
+      <table>
+        <thead><tr><th>Étape</th><th>Description</th><th>Outils populaires</th></tr></thead>
+        <tbody>
+          <tr><td>Versioning des données</td><td>Tracer l'évolution des datasets</td><td>DVC, Delta Lake</td></tr>
+          <tr><td>Tracking des expériences</td><td>Comparer les runs d'entraînement</td><td>MLflow, W&B</td></tr>
+          <tr><td>Registre de modèles</td><td>Stocker et versionner les modèles</td><td>MLflow, Hugging Face</td></tr>
+          <tr><td>Monitoring</td><td>Surveiller la performance en prod</td><td>Evidently, Grafana</td></tr>
+          <tr><td>CI/CD ML</td><td>Automatiser l'entraînement/déploiement</td><td>GitHub Actions, Kubeflow</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>6.5 Approfondissement : conteneurisation et supervision en production</h3>
+      <span class="adv-badge">Niveau avancé</span>
+      <p>Une API qui tourne sur votre ordinateur ne suffit pas en entreprise. Il faut l'empaqueter pour qu'elle tourne à l'identique partout, et surveiller son comportement une fois en ligne.</p>
+      <h4>Docker : empaqueter son modèle</h4>
+      <p><strong>Docker</strong> encapsule votre code, ses dépendances et le modèle entraîné dans un « conteneur » portable, qui tourne exactement pareil sur votre PC, un serveur cloud ou celui d'un client.</p>
+      <div class="code-block" data-lang="Dockerfile"><span class="cm"># Dockerfile — empaqueter l'API FastAPI du 6.2</span>
+<span class="kw">FROM</span> python:3.11-slim
+
+<span class="kw">WORKDIR</span> /app
+<span class="kw">COPY</span> requirements.txt .
+<span class="kw">RUN</span> pip install --no-cache-dir -r requirements.txt
+
+<span class="kw">COPY</span> . .
+<span class="kw">EXPOSE</span> 8000
+<span class="kw">CMD</span> [<span class="str">"uvicorn"</span>, <span class="str">"api:app"</span>, <span class="str">"--host"</span>, <span class="str">"0.0.0.0"</span>, <span class="str">"--port"</span>, <span class="str">"8000"</span>]
+
+<span class="cm"># Construire puis lancer :</span>
+<span class="cm"># docker build -t detecteur-spam .</span>
+<span class="cm"># docker run -p 8000:8000 detecteur-spam</span></div>
+      <h4>Surveiller un modèle en production</h4>
+      <p>Un modèle déployé peut se dégrader avec le temps : c'est le <strong>drift</strong> (dérive). Les habitudes des utilisateurs changent, de nouveaux types de spam apparaissent, une nouvelle maladie de plante émerge — le modèle entraîné hier devient progressivement moins pertinent.</p>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>Data drift</h4><p>Les nouvelles données en entrée sont statistiquement différentes de celles de l'entraînement.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Concept drift</h4><p>La relation entre les données et la bonne réponse a changé (ex : nouveaux mots-clés de spam).</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>A/B testing</h4><p>Déployer deux versions du modèle simultanément pour comparer leurs performances réelles avant de généraliser.</p></div>
+      </div>
+      <div class="info-box tip"><strong>Réflexe pro</strong> En production, on ré-entraîne régulièrement le modèle sur des données fraîches et on compare ses métriques à la version précédente avant de la remplacer — jamais de déploiement « à l'aveugle ».</div>
+    </div>
+
+    <div class="resources-box">
+      <h4>📚 Pour aller plus loin</h4>
+      <ul>
+        <li><a href="https://madewithml.com/" target="_blank" rel="noopener">Made With ML</a> — cours gratuit complet sur le MLOps : du notebook à la production, avec Docker et monitoring.
+          <span class="r-desc">La suite logique de ce module, très orienté pratique.</span></li>
+        <li><a href="https://docs.docker.com/get-started/" target="_blank" rel="noopener">Docker — Get Started</a> — documentation officielle pour apprendre les bases de la conteneurisation.
+          <span class="r-desc">Nécessaire pour exécuter le Dockerfile ci-dessus.</span></li>
+      </ul>
+    </div>
+
+    <div class="tp-box">
+      <div class="tp-head"><div class="tp-icon">TP</div><div><h4>Travaux Pratiques — Module 6</h4><span>Déployer une démo avec Gradio</span></div></div>
+      <p class="goal">Objectif : transformer un modèle en application accessible via un lien public.</p>
+      <ol class="tp-steps">
+        <li>Reprenez le modèle KNN (spam) du Module 2 ou le classifieur du Module 5.</li>
+        <li>Installez Gradio dans Colab : <code>!pip install gradio</code>.</li>
+        <li>Écrivez une fonction Python qui appelle votre modèle et retourne le résultat.</li>
+        <li>Créez l'interface Gradio et lancez avec <code>share=True</code>.</li>
+        <li>Partagez le lien public généré avec un camarade et notez son retour d'utilisation.</li>
+      </ol>
+      <div class="tp-check" data-module="6"><input type="checkbox" id="tp6"><label for="tp6">J'ai réalisé ce TP</label><span class="done-msg">✓ TP validé</span></div>
+    </div>
+
+    <div class="quiz" data-module="6">
+      <div class="quiz-title"><h4>Quiz — Module 6</h4><span class="score"></span></div>
+      <div class="quiz-question">
+        <div class="quiz-q">1. Quelle bibliothèque Python permet de créer une interface web pour un modèle IA en quelques lignes ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Django</div>
+          <div class="quiz-opt" data-correct="false">React</div>
+          <div class="quiz-opt" data-correct="true">Gradio</div>
+          <div class="quiz-opt" data-correct="false">Bootstrap</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">2. À quoi sert une API REST pour un modèle IA ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">À entraîner le modèle plus vite</div>
+          <div class="quiz-opt" data-correct="true">À exposer le modèle sur le web pour que n'importe quelle app l'utilise via HTTP</div>
+          <div class="quiz-opt" data-correct="false">À nettoyer les données</div>
+          <div class="quiz-opt" data-correct="false">À visualiser les résultats en 3D</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">3. Quel outil sert principalement au tracking des expériences d'entraînement ML ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Photoshop</div>
+          <div class="quiz-opt" data-correct="true">MLflow</div>
+          <div class="quiz-opt" data-correct="false">CapCut</div>
+          <div class="quiz-opt" data-correct="false">Canva</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-result"><span class="msg"></span><button class="quiz-retry">Réessayer</button></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODULE 7 — ÉTHIQUE & INSERTION PRO
+  ========================================================== -->
+  <div class="module" id="module-7">
+    <div class="module-header">
+      <div class="module-num">MODULE 07</div>
+      <div><h2>Éthique de l'IA & Insertion Professionnelle</h2><p class="module-subtitle">Développer une IA responsable et lancer votre carrière dans le domaine.</p></div>
+    </div>
+
+    <div class="section">
+      <h3>7.1 Les défis éthiques de l'IA</h3>
+      <div class="info-box warn"><strong>Pourquoi l'éthique de l'IA est cruciale</strong> Une IA biaisée peut refuser des prêts à des personnes innocentes, discriminer à l'embauche, ou être utilisée pour surveiller des populations. Les ingénieurs IA ont la responsabilité de construire des systèmes justes.</div>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>Biais algorithmiques</h4><p>Si les données d'entraînement reflètent des inégalités sociales, le modèle les amplifiera. Ex : systèmes de reconnaissance faciale moins précis pour certaines populations.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Vie privée</h4><p>Les modèles peuvent mémoriser des données personnelles. Le RGPD en Europe, et des lois africaines émergentes, protègent les citoyens.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Boîte noire</h4><p>Les modèles de deep learning sont souvent inexplicables. Pourquoi le modèle a-t-il refusé ce prêt ? L'XAI (IA explicable) cherche à résoudre ce problème.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Impact sur l'emploi</h4><p>L'IA automatise des tâches répétitives. En Afrique, il faut anticiper et former les travailleurs aux nouveaux métiers.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>7.2 Principes pour une IA responsable</h3>
+      <div class="info-box tip"><strong>Les 5 principes de l'IA éthique</strong></div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-line"><div class="tl-dot" style="background:var(--orange)"></div><div class="tl-bar"></div></div><div class="tl-content"><div class="tl-title">1. Transparence</div><div class="tl-desc">Expliquer comment fonctionne votre système IA et quelles données il utilise.</div></div></div>
+        <div class="tl-item"><div class="tl-line"><div class="tl-dot" style="background:var(--orange)"></div><div class="tl-bar"></div></div><div class="tl-content"><div class="tl-title">2. Équité</div><div class="tl-desc">Tester le modèle sur tous les groupes de la population pour détecter des discriminations.</div></div></div>
+        <div class="tl-item"><div class="tl-line"><div class="tl-dot" style="background:var(--orange)"></div><div class="tl-bar"></div></div><div class="tl-content"><div class="tl-title">3. Responsabilité</div><div class="tl-desc">Définir clairement qui est responsable quand l'IA fait une erreur (développeur, entreprise, utilisateur).</div></div></div>
+        <div class="tl-item"><div class="tl-line"><div class="tl-dot" style="background:var(--orange)"></div><div class="tl-bar"></div></div><div class="tl-content"><div class="tl-title">4. Sécurité</div><div class="tl-desc">Protéger les systèmes contre les attaques (adversarial attacks, empoisonnement des données).</div></div></div>
+        <div class="tl-item"><div class="tl-line"><div class="tl-dot" style="background:var(--orange)"></div></div><div class="tl-content"><div class="tl-title">5. Inclusion</div><div class="tl-desc">Développer des IA qui fonctionnent pour tous, incluant les langues africaines, les personnes âgées, les personnes en situation de handicap.</div></div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>7.3 Carrières dans l'IA</h3>
+      <table>
+        <thead><tr><th>Métier</th><th>Rôle</th><th>Compétences clés</th><th>Salaire estimé (Afrique)</th></tr></thead>
+        <tbody>
+          <tr><td>Data Scientist</td><td>Analyser données, construire modèles</td><td>Python, Stats, ML</td><td>300k–800k FCFA/mois</td></tr>
+          <tr><td>ML Engineer</td><td>Déployer modèles en production</td><td>Python, Cloud, MLOps</td><td>400k–1M FCFA/mois</td></tr>
+          <tr><td>Data Analyst</td><td>Analyser et visualiser les données</td><td>SQL, Excel, Power BI</td><td>200k–500k FCFA/mois</td></tr>
+          <tr><td>AI Product Manager</td><td>Définir les produits IA</td><td>Business + Tech</td><td>500k–1,2M FCFA/mois</td></tr>
+          <tr><td>NLP Engineer</td><td>Systèmes de traitement du langage</td><td>Python, Transformers</td><td>400k–900k FCFA/mois</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>7.4 Votre plan d'action après la formation</h3>
+      <div class="cards">
+        <div class="card"><div class="card-icon">1</div><h4>Construire votre portfolio</h4><p>Réalisez 3-5 projets sur GitHub. Idées : détecteur de maladies des plantes, chatbot en fon, analyseur de prix de marchés locaux.</p></div>
+        <div class="card"><div class="card-icon">2</div><h4>Certifications</h4><p>TensorFlow Developer Certificate, AWS ML Specialty, Google Professional ML Engineer. Boostez votre CV immédiatement.</p></div>
+        <div class="card"><div class="card-icon">3</div><h4>Kaggle & compétitions</h4><p>Participez à des compétitions ML. Même un Top 20% est impressionnant pour un recruteur. Apprenez des meilleurs.</p></div>
+        <div class="card"><div class="card-icon">4</div><h4>Réseau professionnel</h4><p>LinkedIn, communautés IA Africa, meetups locaux, Discord Data Science Africa. Le réseau ouvre des portes.</p></div>
+        <div class="card"><div class="card-icon">5</div><h4>Contribuer à l'open source</h4><p>Contribuez à des projets de langues africaines (Masakhane, AfroNLP). Excellente visibilité internationale.</p></div>
+        <div class="card"><div class="card-icon">6</div><h4>Freelance & entrepreneuriat</h4><p>Upwork, Fiverr, ou créer votre startup IA locale. L'écosystème tech africain explose en ce moment !</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>7.5 Approfondissement : réglementation et explicabilité (XAI)</h3>
+      <span class="adv-badge">Niveau avancé</span>
+      <p>L'éthique de l'IA ne reste pas théorique : elle se traduit désormais en obligations légales et en outils techniques concrets.</p>
+      <h4>Cadres réglementaires à connaître</h4>
+      <table>
+        <thead><tr><th>Cadre</th><th>Portée</th></tr></thead>
+        <tbody>
+          <tr><td>RGPD (Europe)</td><td>Protection des données personnelles ; s'applique dès qu'on traite des données de citoyens européens</td></tr>
+          <tr><td>EU AI Act (2024)</td><td>Premier cadre légal complet sur l'IA : classe les systèmes par niveau de risque (inacceptable, élevé, limité, minimal)</td></tr>
+          <tr><td>Lois nationales africaines</td><td>Cadres émergents (ex : lois sur la protection des données au Bénin, Nigeria, Kenya) — à surveiller pour toute IA traitant des données citoyennes</td></tr>
+        </tbody>
+      </table>
+      <h4>Rendre l'IA explicable (XAI)</h4>
+      <p>Deux bibliothèques Python dominent l'explicabilité des modèles « boîte noire » :</p>
+      <div class="code-block" data-lang="Python"><span class="cm"># SHAP : expliquer une prédiction individuelle</span>
+<span class="kw">import</span> shap
+
+explainer = shap.<span class="fn">Explainer</span>(modele)
+valeurs_shap = explainer(X_test[:<span class="num">1</span>])
+shap.<span class="fn">plots.waterfall</span>(valeurs_shap[<span class="num">0</span>])
+<span class="cm"># Affiche quelles variables ont le plus poussé la prédiction vers "SPAM" ou "Normal"</span></div>
+      <p><strong>SHAP</strong> (SHapley Additive exPlanations) et <strong>LIME</strong> répondent tous deux à la question « pourquoi ce modèle a-t-il pris cette décision pour CE cas précis ? » — essentiel pour justifier un refus de crédit ou un diagnostic devant un régulateur ou un client.</p>
+      <div class="info-box warn"><strong>Auditer les biais avant le déploiement</strong> Des bibliothèques comme <code>Fairlearn</code> ou <code>AIF360</code> permettent de mesurer automatiquement si un modèle traite différemment des groupes démographiques différents (genre, région, âge) avant sa mise en production.</div>
+    </div>
+
+    <div class="resources-box">
+      <h4>📚 Pour aller plus loin</h4>
+      <ul>
+        <li><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener">EU AI Act — Cadre réglementaire officiel</a> — comprendre la réglementation qui influence déjà les standards mondiaux.
+          <span class="r-desc">Utile même hors Europe : de nombreuses entreprises s'y alignent par anticipation.</span></li>
+        <li><a href="https://pair.withgoogle.com/guidebook/" target="_blank" rel="noopener">People + AI Guidebook — Google</a> — guide pratique pour concevoir des produits IA centrés sur l'humain.
+          <span class="r-desc">Parfait complément pour le TP 7 (audit d'un cas d'usage).</span></li>
+      </ul>
+    </div>
+
+    <div class="tp-box">
+      <div class="tp-head"><div class="tp-icon">TP</div><div><h4>Travaux Pratiques — Module 7</h4><span>Auditer un cas d'usage IA</span></div></div>
+      <p class="goal">Objectif : appliquer une grille d'éthique et préparer votre insertion professionnelle.</p>
+      <ol class="tp-steps">
+        <li>Choisissez un système IA réel (scoring de crédit mobile money, recommandation, recrutement...).</li>
+        <li>Identifiez 2 biais potentiels et proposez 1 mesure concrète de transparence pour ce système.</li>
+        <li>Consultez le tableau des métiers et choisissez celui qui vous attire le plus.</li>
+        <li>Rédigez (ou mettez à jour) votre profil LinkedIn avec 3 compétences IA visées et 1 projet portfolio à réaliser.</li>
+      </ol>
+      <div class="tp-check" data-module="7"><input type="checkbox" id="tp7"><label for="tp7">J'ai réalisé ce TP</label><span class="done-msg">✓ TP validé</span></div>
+    </div>
+
+    <div class="quiz" data-module="7">
+      <div class="quiz-title"><h4>Quiz Final — Module 7</h4><span class="score"></span></div>
+      <div class="quiz-question">
+        <div class="quiz-q">1. Qu'est-ce qu'un « biais algorithmique » dans un système d'IA ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Une erreur de programmation dans le code</div>
+          <div class="quiz-opt" data-correct="false">Un algorithme trop lent à calculer</div>
+          <div class="quiz-opt" data-correct="true">Des discriminations dans les prédictions dues à des données inéquitables</div>
+          <div class="quiz-opt" data-correct="false">Un modèle qui consomme trop de mémoire</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">2. Lequel de ces éléments N'EST PAS l'un des 5 principes de l'IA éthique vus dans ce module ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Transparence</div>
+          <div class="quiz-opt" data-correct="false">Équité</div>
+          <div class="quiz-opt" data-correct="true">Rentabilité maximale</div>
+          <div class="quiz-opt" data-correct="false">Inclusion</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">3. Quel métier consiste principalement à déployer des modèles ML en production ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Data Analyst</div>
+          <div class="quiz-opt" data-correct="true">ML Engineer</div>
+          <div class="quiz-opt" data-correct="false">AI Product Manager</div>
+          <div class="quiz-opt" data-correct="false">Community Manager</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-result"><span class="msg"></span><button class="quiz-retry">Réessayer</button></div>
+    </div>
+
+    <div style="text-align:center; padding:44px 24px; background:var(--card); border-radius:20px; border:1px solid var(--border); margin-top:36px;">
+      <div style="font-size:56px;margin-bottom:14px;">◆</div>
+      <h3 style="font-size:22px;font-weight:800;color:#fff;margin-bottom:10px;">Félicitations, tronc commun terminé !</h3>
+      <p style="color:var(--muted);max-width:520px;margin:0 auto 20px;">Vous avez parcouru les 7 modules cœur de la formation Expert en Intelligence Artificielle. Direction le Module 8 pour l'atelier pratique 100% outils IA et votre certificat.</p>
+      <div class="tags" style="justify-content:center;">
+        <span class="tag green">Fondamentaux</span><span class="tag green">Machine Learning</span><span class="tag green">Deep Learning</span>
+        <span class="tag green">NLP</span><span class="tag green">Vision</span><span class="tag green">Déploiement</span><span class="tag green">Éthique</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODULE 8 — ATELIER OUTILS IA & BUSINESS (BONUS)
+  ========================================================== -->
+  <div class="module" id="module-8">
+    <div class="module-header">
+      <div class="module-num">MODULE 08 · BONUS</div>
+      <div><h2>Atelier Pratique — Outils IA & Business</h2><p class="module-subtitle">Passez de la théorie à la pratique professionnelle : 35+ outils IA pour produire, automatiser et monétiser.</p></div>
+    </div>
+
+    <div class="section">
+      <h3>8.1 Votre équipe IA — les 5 piliers</h3>
+      <p>Avant de foncer dans les outils, comprenez leurs rôles complémentaires — comme une équipe de travail :</p>
+      <div class="cards">
+        <div class="card"><div class="card-icon">◆</div><h4>Stratège — Claude.ai</h4><p>Prompt long, analyse stratégique, structuration d'idées.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Créatif — ChatGPT</h4><p>Scripts, copywriting, créativité, tunnels de vente.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Cerveau — DeepSeek</h4><p>Raisonnement avancé, 1M tokens gratuits, plans d'action.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Chercheur — Gemini & Perplexity</h4><p>Recherche temps réel, veille et sources vérifiées.</p></div>
+        <div class="card"><div class="card-icon">◆</div><h4>Artistes — ElevenLabs, Suno, Leonardo, CapCut</h4><p>Voix, musique, image et vidéo générées par IA.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>8.2 Écosystème IA du programme (35+ outils)</h3>
+      <table>
+        <thead><tr><th>Outil</th><th>Catégorie</th><th>Utilité principale</th></tr></thead>
+        <tbody>
+          <tr><td>ChatGPT</td><td>Rédaction & stratégie</td><td>Scripts, copywriting, créativité, tunnels de vente</td></tr>
+          <tr><td>Claude.ai</td><td>Stratège principal</td><td>Prompt long, Brand Brain, analyse stratégique</td></tr>
+          <tr><td>DeepSeek</td><td>Raisonnement avancé</td><td>1M tokens, plan d'action, analyse gratuite</td></tr>
+          <tr><td>Gemini</td><td>Recherche temps réel</td><td>Tendances, veille concurrentielle</td></tr>
+          <tr><td>Perplexity</td><td>Veille sourcée</td><td>Analyse concurrents, sources vérifiées</td></tr>
+          <tr><td>ElevenLabs</td><td>Voix IA pro</td><td>Voix françaises réalistes, émotions</td></tr>
+          <tr><td>Suno AI</td><td>Musique originale</td><td>Jingles, musique de fond, afrobeat</td></tr>
+          <tr><td>Leonardo AI</td><td>Images pro</td><td>Branding, publicités, 150 crédits/jour</td></tr>
+          <tr><td>Canva AI</td><td>Design rapide</td><td>Miniatures, posts, templates, logos</td></tr>
+          <tr><td>NanoBanana</td><td>Édition conversationnelle</td><td>Modification d'images par dialogue</td></tr>
+          <tr><td>Sora 2 / Veo 3</td><td>Vidéo réaliste</td><td>Plans cinématographiques marketing</td></tr>
+          <tr><td>Kling AI</td><td>Vidéo virale</td><td>Contenu TikTok / pub, time-lapse</td></tr>
+          <tr><td>CapCut</td><td>Montage complet</td><td>Sous-titres IA, transitions, effets</td></tr>
+          <tr><td>Submagic</td><td>Sous-titres dynamiques</td><td>Sous-titres type TikTok viraux</td></tr>
+          <tr><td>Copilot (Microsoft)</td><td>Productivité</td><td>Excel, Outlook, automatisation bureautique</td></tr>
+          <tr><td>Manus</td><td>Agent IA autonome</td><td>Recherche multitâche, automatisation</td></tr>
+          <tr><td>Lovable</td><td>No-code</td><td>Créer sites/apps sans coder</td></tr>
+          <tr><td>Meta AI</td><td>Réseaux sociaux</td><td>WhatsApp, Instagram, Facebook IA</td></tr>
+          <tr><td>Kimi</td><td>Documents longs</td><td>Analyse de PDF, contrats, rapports</td></tr>
+          <tr><td>Make.com / Zapier</td><td>Automatisation</td><td>Workflows, notifications, CRM</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section">
+      <h3>8.3 Parcours guidé — 4 semaines</h3>
+      <p>Un condensé du programme intensif « Producteur Full-Stack IA » : chaque jour, un outil, un objectif concret.</p>
+
+      <div class="week-banner">Semaine 1 · Fondations & stratégie</div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 1</span><span class="day-tool">Claude.ai — le stratège</span></div><p>Créez votre compte gratuit, construisez votre « Brand Brain » (nom, domaine, valeurs, ton, public cible) et générez vos 3 premières idées de contenu ou de service.</p>
+        <div class="prompt-box"><div class="prompt-label">Prompt idéation</div>« Je crée du contenu sur [thème] pour [audience]. Propose 5 idées originales adaptées au marché béninois, avec titre et angle pour chacune. »</div></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 2</span><span class="day-tool">DeepSeek — le cerveau</span></div><p>Classez vos idées par pertinence, décomposez la meilleure en structure complète (accroche, points clés, conclusion, appel à l'action).</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 3</span><span class="day-tool">ChatGPT — le créatif</span></div><p>Règle d'or : Claude pour le fond, ChatGPT pour la forme. Générez accroches, emojis et titre choc.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 4</span><span class="day-tool">Gemini + Perplexity — recherche & tendances</span></div><p>Identifiez les tendances de contenu en Afrique de l'Ouest et analysez un concurrent avec des sources vérifiées.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 5</span><span class="day-tool">Copilot & Kimi — productivité</span></div><p>Créez un tableau de suivi de production et analysez un long document (PDF, rapport) automatiquement.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jours 6-7</span><span class="day-tool">Révision & planification</span></div><p>Relisez votre carnet de bord, testez à nouveau chaque outil, préparez la semaine audio/image.</p></div>
+
+      <div class="week-banner">Semaine 2 · Audio et image nouvelle génération</div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 8</span><span class="day-tool">ElevenLabs — voix IA pro</span></div><p>Générez une voix off française réaliste par section (intro, points clés, conclusion) avec émotions réglées.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 9</span><span class="day-tool">Suno AI — musique originale</span></div><p>Créez un jingle d'intro afrobeat, une musique de fond loopable et un outro cinématique.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 10</span><span class="day-tool">NanoBanana + Leonardo — images pro</span></div><p>Créez 3 visuels pour réseaux sociaux et une bannière LinkedIn cohérente avec votre identité visuelle.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 11</span><span class="day-tool">Kling AI / Sora 2 — vidéo réaliste</span></div><p>Générez des plans cinématographiques (marché local, portrait, produit) à partir de prompts descriptifs.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 12</span><span class="day-tool">Meta AI & Assembly AI</span></div><p>Générez 5 idées de Reels viraux et transcrivez un audio automatiquement.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jours 13-14</span><span class="day-tool">Organisation & préparation montage</span></div><p>Structurez vos fichiers, vérifiez la qualité, écrivez le plan de montage seconde par seconde.</p></div>
+
+      <div class="week-banner">Semaine 3 · Montage et production finale</div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 15</span><span class="day-tool">CapCut — timeline & synchronisation</span></div><p>Importez les médias, disposez la voix principale, la musique de fond (volume 25%) et le jingle.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 16</span><span class="day-tool">Synchronisation & transitions</span></div><p>Placez les plans de coupe, synchronisez avec la voix, ajoutez transitions et réduction de bruit.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 17</span><span class="day-tool">Sous-titres automatiques & effets</span></div><p>Générez des sous-titres IA, personnalisez police et animations, ajoutez un filtre cinématique.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 18</span><span class="day-tool">Révision & export</span></div><p>Visionnez plusieurs fois : cohérence narrative, transitions, qualité audio. Export 1080p.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 19</span><span class="day-tool">Formats adaptatifs & Submagic</span></div><p>Exportez en horizontal (YouTube), vertical 9:16 (TikTok/Reels) avec sous-titres dynamiques.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 20</span><span class="day-tool">Textes de publication & calendrier</span></div><p>Générez titres, descriptions et hashtags pour chaque plateforme ; créez votre calendrier de publication.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 21</span><span class="day-tool">Publication stratégique</span></div><p>Publiez sur YouTube, TikTok, Instagram, LinkedIn — votre première vidéo IA est en ligne !</p></div>
+
+      <div class="week-banner">Semaine 4 · Analyse, automatisation et monétisation</div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 22</span><span class="day-tool">Analyse des commentaires</span></div><p>Utilisez DeepSeek pour analyser les retours, dégager des tendances et 2 idées de prochaines vidéos.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 23</span><span class="day-tool">Templates & workflow reproductible</span></div><p>Enregistrez un template CapCut et finalisez votre bibliothèque de 30+ prompts.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 24</span><span class="day-tool">Cross-posting & teasers</span></div><p>Créez 2 teasers de 15s et planifiez votre diffusion multi-plateformes.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 25</span><span class="day-tool">Monétisation & offre de service</span></div><p>Brainstormez 5 façons de monétiser et rédigez une offre « Création vidéo assistée par IA ».</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 26</span><span class="day-tool">Scripts de vente</span></div><p>Préparez un script d'appel/message de prospection et anticipez les objections.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 27</span><span class="day-tool">Automatisation (Make/Manus)</span></div><p>Configurez un scénario simple : formulaire → notification automatique.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 28</span><span class="day-tool">Lovable — landing page no-code</span></div><p>Générez une landing page complète pour votre offre en décrivant simplement votre besoin en français.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 29</span><span class="day-tool">Veille & communauté</span></div><p>Rejoignez des communautés IA Afrique et partagez votre parcours sur LinkedIn.</p></div>
+      <div class="day-card"><div class="day-header"><span class="day-num">Jour 30</span><span class="day-tool">Bilan & certification</span></div><p>Listez vos productions, les outils maîtrisés, et obtenez votre certificat ci-dessous !</p></div>
+    </div>
+
+    <div class="section">
+      <h3>8.4 Approfondissement : prompting avancé et agents IA autonomes</h3>
+      <span class="adv-badge">Niveau avancé</span>
+      <p>Au-delà des prompts simples, un vrai professionnel de l'IA structure ses instructions et enchaîne des outils entre eux.</p>
+      <h4>Anatomie d'un prompt professionnel</h4>
+      <div class="cards">
+        <div class="card"><div class="card-icon">1</div><h4>Rôle</h4><p>« Tu es un expert en... » — cadre la posture et le vocabulaire attendu.</p></div>
+        <div class="card"><div class="card-icon">2</div><h4>Contexte</h4><p>Informations de fond nécessaires : audience, contraintes, données existantes.</p></div>
+        <div class="card"><div class="card-icon">3</div><h4>Tâche précise</h4><p>Le résultat exact attendu, formulé sans ambiguïté.</p></div>
+        <div class="card"><div class="card-icon">4</div><h4>Format de sortie</h4><p>Structure demandée : tableau, liste à puces, JSON, longueur maximale...</p></div>
+      </div>
+      <div class="prompt-box"><div class="prompt-label">Exemple de prompt structuré</div>« Tu es un expert en stratégie de contenu pour l'Afrique francophone (rôle). Je lance un service de création de visuels IA pour PME à Cotonou, budget client 50-150k FCFA (contexte). Propose 5 idées de posts Instagram pour ma première semaine (tâche). Réponds sous forme de tableau : Jour | Idée | Angle | Call-to-action (format). »</div>
+      <h4>Agents IA autonomes : la prochaine étape</h4>
+      <p>Un <strong>agent IA</strong> (comme Manus, ou les « GPTs » avec outils) ne se contente pas de répondre : il peut planifier des étapes, utiliser des outils (recherche web, exécution de code, envoi d'email) et boucler jusqu'à obtenir le résultat demandé, sans intervention humaine à chaque étape. C'est la brique de base de l'automatisation avancée en entreprise (ex : un agent qui surveille les avis clients, résume les tendances et rédige une ébauche de réponse chaque matin).</p>
+      <div class="info-box tip"><strong>Combiner Module 4 et Module 8</strong> Le RAG vu au Module 4 et le prompting avancé vu ici sont les deux briques qui transforment un simple chatbot en assistant d'entreprise capable de répondre avec vos propres documents.</div>
+    </div>
+
+    <div class="resources-box">
+      <h4>📚 Pour aller plus loin</h4>
+      <ul>
+        <li><a href="https://www.promptingguide.ai/" target="_blank" rel="noopener">Prompt Engineering Guide</a> — techniques avancées de prompting, mises à jour régulièrement.
+          <span class="r-desc">Référence à consulter à chaque nouveau projet client.</span></li>
+        <li><a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noopener">Guide de prompt engineering — Anthropic</a> — bonnes pratiques officielles pour structurer ses prompts avec Claude.
+          <span class="r-desc">Directement applicable aux prompts utilisés durant l'atelier.</span></li>
+        <li><a href="https://cookbook.openai.com/" target="_blank" rel="noopener">OpenAI Cookbook</a> — recettes de code prêtes à l'emploi pour construire des applications avec des LLM.
+          <span class="r-desc">Utile pour aller au-delà du no-code vers de vraies intégrations.</span></li>
+      </ul>
+    </div>
+
+    <div class="tp-box">
+      <div class="tp-head"><div class="tp-icon">TP</div><div><h4>Travaux Pratiques — Module 8</h4><span>Réaliser votre premier projet Full-Stack IA</span></div></div>
+      <p class="goal">Objectif : produire un mini-projet complet en combinant plusieurs outils IA, du concept à la publication.</p>
+      <ol class="tp-steps">
+        <li>Choisissez une niche (agriculture, éducation, mode, tech...) et créez des comptes gratuits sur Claude.ai, ChatGPT et DeepSeek.</li>
+        <li>Avec Claude, générez 5 idées de contenu ou de service pour cette niche.</li>
+        <li>Avec DeepSeek ou ChatGPT, rédigez un script court (1 minute) pour la meilleure idée.</li>
+        <li>Créez 1 visuel avec Canva ou Leonardo AI illustrant ce contenu.</li>
+        <li>Publiez (ou simulez la publication) sur un réseau social et notez 2 retours ou apprentissages.</li>
+      </ol>
+      <div class="tp-check" data-module="8"><input type="checkbox" id="tp8"><label for="tp8">J'ai réalisé ce TP</label><span class="done-msg">✓ TP validé</span></div>
+    </div>
+
+    <div class="quiz" data-module="8">
+      <div class="quiz-title"><h4>Quiz — Module 8</h4><span class="score"></span></div>
+      <div class="quiz-question">
+        <div class="quiz-q">1. Quel outil est spécialisé dans la génération de voix IA professionnelles ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Leonardo AI</div>
+          <div class="quiz-opt" data-correct="true">ElevenLabs</div>
+          <div class="quiz-opt" data-correct="false">Make.com</div>
+          <div class="quiz-opt" data-correct="false">Kimi</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">2. Quel outil permet de créer un site web ou une landing page sans coder, en décrivant son besoin en français ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">CapCut</div>
+          <div class="quiz-opt" data-correct="false">Suno AI</div>
+          <div class="quiz-opt" data-correct="true">Lovable</div>
+          <div class="quiz-opt" data-correct="false">Assembly AI</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">3. Dans « l'équipe IA » à 5 piliers, quel est le rôle principal de Claude.ai ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">Génération de musique</div>
+          <div class="quiz-opt" data-correct="true">Stratège principal : structuration d'idées et analyse</div>
+          <div class="quiz-opt" data-correct="false">Montage vidéo</div>
+          <div class="quiz-opt" data-correct="false">Automatisation de workflows</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-result"><span class="msg"></span><button class="quiz-retry">Réessayer</button></div>
+    </div>
+
+    <!-- CERTIFICAT -->
+    <div class="cert-wrap">
+      <h3 style="font-size:20px;color:#fff;margin-bottom:14px;">🎓 Votre certificat de fin de formation</h3>
+      <p style="color:var(--muted);font-size:13.5px;max-width:560px;margin:0 auto;">Une fois vos modules validés (TP + quiz), générez votre certificat nominatif Expert en Intelligence Artificielle.</p>
+      <button class="btn btn-primary" id="gen-certificate" style="margin-top:18px;">Générer mon certificat</button>
+
+      <div class="certificate" id="certificate">
+        <div class="seal">Institut de Formation Professionnelle · CJEPE-BENIN</div>
+        <h3>CERTIFICAT DE COMPLÉTION</h3>
+        <p><strong>Formation Expert en Intelligence Artificielle</strong><br>Fondamentaux · Machine Learning · Deep Learning · NLP · Vision · Déploiement · Éthique · Atelier Outils IA</p>
+        <p>Ce certificat est décerné à :</p>
+        <div class="name" id="cert-name">[Nom du lauréat]</div>
+        <p>Pour avoir suivi le parcours complet de la formation, de zéro aux concepts avancés, validé par des travaux pratiques et des quiz de compétence.</p>
+        <p><strong>Niveau atteint :</strong> <span id="cert-level">—</span></p>
+        <p>Date d'obtention : <span id="cert-date"></span><br>Numéro de série : <span id="cert-serial"></span></p>
+        <div class="sig">
+          <p>_________________________</p>
+          <b>Y. Adéniyi Mahmoud SAROUKOU</b>
+          Directeur Général, IFP CJEPE-BENIN
+        </div>
+        <div style="margin-top:18px;">
+          <button class="btn btn-ghost" id="print-certificate">🖨 Imprimer / enregistrer en PDF</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /content -->
+
+  <footer class="course-footer">
+    <p>Formation <strong>Expert en Intelligence Artificielle</strong> — Institut de Formation Professionnelle CJEPE-BENIN</p>
+    <p style="margin-top:8px;">Durée : 3 mois | Inscription : 15.000F | Formation : 200.000 FCFA | +229 01 53 20 10 03</p>
+    <p style="margin-top:16px;"><a href="#module-0" class="back-top">Retour au début</a></p>
+  </footer>
+
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
