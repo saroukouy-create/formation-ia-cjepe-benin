@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+ <title>CJEPE-BENIN | Programme Full-Stack IA - 30 jours + Certificat 28 jours</title>
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ :root {
+ --bg-page: #e8f0f6;
+ --bg-panel: #f7fbff;
+ --bg-panel-soft: #f1f6fb;
+ --line-soft: #c8d7e5;
+ --text-main: #0f2436;
+ --text-muted: #2b4256;
+ }
+
+ body {
+ background:
+ radial-gradient(circle at 12% 8%, rgba(255, 255, 255, 0.7) 0, rgba(255, 255, 255, 0) 34%),
+ linear-gradient(160deg, var(--bg-page) 0%, #dfeaf4 100%);
+ font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+ line-height: 1.5;
+ color: var(--text-main);
+ padding: 24px 20px;
+ }
+
+ #topBackBar {
+ margin: 0 auto 0.8rem;
+ max-width: 1400px;
+ }
+
+ #topBackBar a {
+ display: inline-block;
+ background: #153654;
+ color: #f3f8ff;
+ text-decoration: none;
+ border: 1px solid #32557b;
+ border-radius: 999px;
+ padding: 0.42rem 0.9rem;
+ font-weight: 650;
+ }
+
+ .container {
+ max-width: 1400px;
+ margin: 0 auto;
+ background: var(--bg-panel);
+ border-radius: 2rem;
+ box-shadow: 0 30px 55px -20px rgba(0, 0, 0, 0.25);
+ border: 1px solid var(--line-soft);
+ overflow: hidden;
+ }
+
+ .hero {
+ background: linear-gradient(135deg, #0033BB 0%, #0022AA 60%, #001A88 100%);
+ padding: 3rem 2rem;
+ color: white;
+ text-align: center;
+ border-bottom: 6px solid #FF6600;
+ }
+ .hero h1 {
+ font-size: 2.6rem;
+ font-weight: 800;
+ letter-spacing: -0.02em;
+ margin-bottom: 0.5rem;
+ }
+ .hero-badges {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 0.9rem;
+ margin: 1.5rem 0 0.5rem;
+ }
+ .badge {
+ background: rgba(255,102,0,0.25);
+ border: 1px solid rgba(255,102,0,0.5);
+ backdrop-filter: blur(8px);
+ padding: 0.4rem 1.2rem;
+ border-radius: 60px;
+ font-weight: 600;
+ font-size: 0.9rem;
+ }
+
+ .content {
+ padding: 2rem 2rem 2.5rem;
+ background: var(--bg-panel-soft);
+ }
+
+ h2 {
+ font-size: 1.9rem;
+ margin: 2rem 0 1.2rem 0;
+ border-left: 6px solid #FF6600;
+ padding-left: 1.2rem;
+ color: #0033BB;
+ }
+
+ h3 {
+ font-size: 1.4rem;
+ margin: 1.8rem 0 0.8rem;
+ color: #0033BB;
+ }
+
+ .card-jour {
+ background: #fafdff;
+ border: 1px solid #d6e3ee;
+ border-radius: 1.75rem;
+ padding: 1.2rem 1.8rem;
+ margin-bottom: 1.8rem;
+ transition: all 0.2s ease;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+ }
+ .card-jour:hover {
+ border-color: #9cd0df;
+ box-shadow: 0 16px 24px -12px rgba(2, 44, 58, 0.12);
+ }
+
+ .jour-header {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: baseline;
+ gap: 0.7rem;
+ margin-bottom: 0.75rem;
+ }
+ .jour-num {
+ background: #e8eeff;
+ color: #0033BB;
+ font-weight: 700;
+ padding: 0.2rem 1rem;
+ border-radius: 30px;
+ font-size: 0.8rem;
+ }
+ .outil-nom {
+ font-size: 1.35rem;
+ font-weight: 700;
+ color: #FF6600;
+ letter-spacing: -0.3px;
+ }
+
+ .exercice {
+ background: #ecf4ff;
+ border-left: 5px solid #0033BB;
+ padding: 0.8rem 1.2rem;
+ margin: 1rem 0;
+ border-radius: 1rem;
+ }
+
+ .prompt {
+ background: #102b34;
+ color: #e2f0f5;
+ font-family: 'SF Mono', 'Courier New', monospace;
+ padding: 0.8rem 1rem;
+ border-radius: 1rem;
+ margin: 0.8rem 0;
+ font-size: 0.85rem;
+ overflow-x: auto;
+ white-space: pre-wrap;
+ }
+
+ .astuce {
+ background: #fff7e5;
+ border-left: 4px solid #f0b429;
+ padding: 0.6rem 1rem;
+ border-radius: 0.9rem;
+ margin-top: 0.8rem;
+ font-size: 0.9rem;
+ }
+
+ .week-banner {
+ background: linear-gradient(90deg, #0033BB 0%, #0044DD 100%);
+ padding: 0.6rem 1.8rem;
+ border-radius: 40px;
+ font-size: 1.35rem;
+ font-weight: 700;
+ color: white;
+ display: inline-block;
+ margin: 1.5rem 0 1rem 0;
+ border-left: 5px solid #FF6600;
+ }
+
+ .plan-box {
+ background: #edf4ff;
+ border-radius: 1.8rem;
+ padding: 1.6rem;
+ margin: 2rem 0;
+ border-top: 4px solid #FF6600;
+ }
+
+ .strategic-box {
+ background: #e6f5f2;
+ border-radius: 1.8rem;
+ padding: 1.5rem;
+ margin: 1.5rem 0;
+ }
+
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ margin: 1.2rem 0;
+ background: #f7fbff;
+ border-radius: 1rem;
+ overflow: hidden;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+ }
+ th, td {
+ border: 1px solid #bfd2df;
+ padding: 12px 10px;
+ text-align: left;
+ vertical-align: top;
+ }
+ td { color: var(--text-main); }
+ tbody tr:nth-child(even) { background: #eef5fb; }
+ th {
+ background: #0033BB;
+ color: white;
+ font-weight: 700;
+ }
+
+ .btn-certif {
+ background: linear-gradient(135deg, #FF6600 0%, #FF8800 100%);
+ color: white;
+ border: none;
+ padding: 0.9rem 2rem;
+ border-radius: 50px;
+ font-weight: 700;
+ font-size: 1rem;
+ cursor: pointer;
+ transition: 0.2s;
+ margin: 1rem 0 0.5rem;
+ box-shadow: 0 4px 16px rgba(255,102,0,0.3);
+ }
+ .btn-certif:hover {
+ background: linear-gradient(135deg, #e65500 0%, #FF7700 100%);
+ transform: translateY(-1px);
+ box-shadow: 0 8px 20px rgba(255,102,0,0.4);
+ }
+
+ .certificate-international {
+ background: linear-gradient(145deg, #ffffff 0%, #f0f3ff 100%);
+ border-radius: 2rem;
+ padding: 2rem 1.8rem;
+ text-align: center;
+ border: 3px solid #0033BB;
+ box-shadow: 0 20px 35px -12px rgba(0,51,187,0.25), inset 0 0 0 8px rgba(255,102,0,0.07);
+ margin-top: 1.5rem;
+ position: relative;
+ }
+ .certificate-international::before {
+ content: '';
+ position: absolute;
+ top: 8px; left: 8px; right: 8px; bottom: 8px;
+ border: 2px solid #FF6600;
+ border-radius: 1.5rem;
+ pointer-events: none;
+ }
+ .certificate-international h3 {
+ font-size: 1.9rem;
+ color: #0033BB;
+ letter-spacing: 2px;
+ margin-bottom: 0.5rem;
+ }
+ .cert-seal {
+ font-size: 3rem;
+ margin-bottom: 0.4rem;
+ }
+ .cert-name-large {
+ font-size: 2rem;
+ font-weight: 800;
+ border-bottom: 2px dashed #FF6600;
+ display: inline-block;
+ margin: 0.8rem 0;
+ font-family: 'Georgia', serif;
+ color: #0033BB;
+ }
+ .institute-logo {
+ text-align: center;
+ margin-bottom: 1rem;
+ }
+ .institute-logo img {
+ max-width: 130px;
+ height: auto;
+ margin-bottom: 0.5rem;
+ border-radius: 12px;
+ box-shadow: 0 4px 16px rgba(0,51,187,0.2);
+ }
+ .institute-name {
+ font-size: 1.1rem;
+ font-weight: 700;
+ color: #0033BB;
+ letter-spacing: 1px;
+ }
+ .signature-footer {
+ margin-top: 1.5rem;
+ padding-top: 1rem;
+ border-top: 2px solid #FF6600;
+ font-size: 0.9rem;
+ color: #333333;
+ }
+ .director-signature {
+ font-weight: 700;
+ color: #0033BB;
+ margin-top: 0.5rem;
+ }
+ .download-btn {
+ background: #0033BB;
+ color: white;
+ border: none;
+ padding: 0.7rem 1.5rem;
+ border-radius: 40px;
+ font-weight: 600;
+ font-size: 0.9rem;
+ cursor: pointer;
+ margin-top: 1rem;
+ transition: 0.2s;
+ box-shadow: 0 4px 12px rgba(0,51,187,0.25);
+ }
+ .download-btn:hover {
+ background: #0022AA;
+ transform: translateY(-1px);
+ box-shadow: 0 8px 16px rgba(0,51,187,0.35);
+ }
+ .btn-group {
+ display: flex;
+ gap: 1rem;
+ justify-content: center;
+ flex-wrap: wrap;
+ }
+
+ footer {
+ text-align: center;
+ margin-top: 2rem;
+ font-size: 0.75rem;
+ color: #0033BB;
+ border-top: 3px solid #FF6600;
+ padding-top: 1.5rem;
+ background: #e8f1fb;
+ padding-bottom: 1.5rem;
+ }
+
+ .inscription {
+ background: linear-gradient(135deg, #e7efff 0%, #eef4fc 100%);
+ border-left: 5px solid #0033BB;
+ border-radius: 1rem;
+ padding: 0.8rem 1.2rem;
+ margin: 0.8rem 0;
+ }
+ .inscription strong {
+ color: #0033BB;
+ display: block;
+ margin-bottom: 0.4rem;
+ font-size: 0.95rem;
+ }
+ .inscription ol {
+ margin-left: 1.2rem;
+ font-size: 0.9rem;
+ line-height: 1.7;
+ }
+ .inscription a {
+ color: #FF6600;
+ font-weight: 600;
+ text-decoration: none;
+ }
+ .inscription a:hover { text-decoration: underline; }
+ .prompts-block {
+ background: #0d1f28;
+ border-radius: 1rem;
+ padding: 0.8rem 1rem;
+ margin: 0.8rem 0;
+ }
+ .prompts-block .prompt-label {
+ color: #FF6600;
+ font-size: 0.75rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ margin-bottom: 0.3rem;
+ }
+ .prompts-block .prompt {
+ background: #102b34;
+ margin: 0.4rem 0;
+ border-left: 3px solid #FF6600;
+ }
+
+ pre#ia5ProgramText {
+ background: #f4f8fc !important;
+ border-color: #b9cbdb !important;
+ color: #122c40 !important;
+ }
+
+ @media (max-width: 680px) {
+ .content { padding: 1.2rem; }
+ .hero h1 { font-size: 1.9rem; }
+ h2 { font-size: 1.5rem; }
+ ul { columns: 1 !important; }
+ }
+ </style>
+ <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+ <link rel="stylesheet" href="charte-cjepe.css" />
+</head>
+<body>
+<div id="topBackBar"><a href="index.html">&#8592; Retour à l'accueil</a></div>
+<div class="container">
+ <div class="hero">
+ <h1>Producteur Full-Stack IA<br>Certification Complète 30 Jours</h1>
+ <p>De zéro à professionnel : texte, image, voix, vidéo, montage, automatisation + monétisation - accréditation internationale</p>
+ <div class="hero-badges">
+ <span class="badge">1h30/jour</span>
+ <span class="badge">35+ outils IA</span>
+ <span class="badge">Bénin / Afrique</span>
+ <span class="badge">Certificat mondial</span>
+ <span class="badge">Résultats en 7 jours</span>
+ </div>
+ </div>
+
+ <div class="plan-box">
+ <h3 style="margin-top:0;">Programme IA 5 jours - contenu intégré (accès direct)</h3>
+ <p>Le contenu complet est intégré en texte ci-dessous, sans ouverture du PDF.</p>
+ <details open>
+ <summary style="cursor:pointer; font-weight:700; color:#0033BB;">Afficher le programme 5 jours complet</summary>
+ <pre id="ia5ProgramText" style="white-space:pre-wrap; font-size:0.82rem; line-height:1.45; color:#1b2a3b; background:#ffffff; border:1px solid #cbdde2; border-radius:12px; padding:0.8rem; margin-top:0.7rem; max-height:560px; overflow:auto;">Chargement du contenu...</pre>
+ </details>
+ </div>
+
+ <div class="content">
+ <!-- PRÉREQUIS DÉTAILLÉS -->
+ <div class="plan-box">
+ <h3 style="margin-top:0;">AVANT DE COMMENCER - prerequis et installation</h3>
+ <ul style="margin-left:1.2rem;">
+ <li><strong>Ordinateur</strong> (ou smartphone récent) + connexion stable. VPN recommandé (ProtonVPN) pour certains outils.</li>
+ <li><strong>Comptes gratuits</strong> : Gmail, puis claude.ai, chat.deepseek.com, chat.openai.com, gemini.google.com, elevenlabs.io, suno.ai, canva.com, capcut.com, klingai.com, perplexity.ai, leonardo.ai, meta.ai, lovable.dev</li>
+ <li><strong>Dossier de travail</strong> : <code>Projet_IA_2026</code>  Semaine1 - Semaine4, chaque semaine : J1 - J7 + <strong>carnet de bord</strong> (Google Docs).</li>
+ <li><strong>Temps quotidien</strong> : 2-3 heures concentrées par jour (peut être étalé).</li>
+ <li><strong>Budget estimé</strong> : 0-50% pour tester les versions premium - tous les outils ont des versions gratuites.</li>
+ </ul>
+ <h3>VOTRE EQUIPE IA (les 5 piliers)</h3>
+ <div style="display:flex; flex-wrap:wrap; gap:0.8rem; justify-content:space-between;">
+ <div><strong>Stratége</strong> : Claude.ai</div>
+ <div><strong>Créatif</strong> : ChatGPT</div>
+ <div><strong>Cerveau</strong> : DeepSeek (1M tokens, gratuit)</div>
+ <div><strong>Chercheur</strong> : Gemini + Perplexity</div>
+ <div><strong>Artistes</strong> : ElevenLabs, Suno, NanoBanana, Sora 2, Kling, CapCut</div>
+ </div>
+ </div>
+
+ <!-- TABLEAU COMPLET DES IA -->
+ <h2>ECOSYSTEME IA DU PROGRAMME (35+ outils)</h2>
+ <table>
+ <thead><tr><th>Outil</th><th>Catégorie</th><th>Utilité principale</th></tr></thead>
+ <tbody>
+ <tr><td>ChatGPT</td><td>Rédaction & stratégie</td><td>Scripts, copywriting, créativité, tunnels de vente</td></tr>
+ <tr><td>Claude.ai</td><td>Stratége principal</td><td>Prompt long, Brand Brain, analyse stratégique</td></tr>
+ <tr><td>DeepSeek</td><td>Raisonnement avancé</td><td>1M tokens, plan d'action, analyse gratuite</td></tr>
+ <tr><td>Gemini</td><td>Recherche temps réel</td><td>Tendances 2025, veille concurrentielle</td></tr>
+ <tr><td>Perplexity</td><td>Veille sourcée</td><td>Analyse concurrents, sources vérifiées</td></tr>
+ <tr><td>Grok</td><td>Tendances sociales</td><td>Ce qui buzz sur X (Twitter)</td></tr>
+ <tr><td>ElevenLabs</td><td>Voix IA pro</td><td>Voix françaises réalistes, émotions</td></tr>
+ <tr><td>Suno AI</td><td>Musique originale</td><td>Jingles, musique de fond, afrobeat</td></tr>
+ <tr><td>Leonardo AI</td><td>Images pro</td><td>Branding, publicités, 150 crédits/jour</td></tr>
+ <tr><td>Canva AI</td><td>Design rapide</td><td>Miniatures, posts, templates, logos</td></tr>
+ <tr><td>NanoBanana</td><td>édition conversationnelle</td><td>Modification d'images par dialogue</td></tr>
+ <tr><td>Sora 2 / Veo 3</td><td>Vidéo réaliste</td><td>Plans cinématographiques marketing</td></tr>
+ <tr><td>Kling AI</td><td>Vidéo virale</td><td>Contenu TikTok / pub, time-lapse</td></tr>
+ <tr><td>CapCut</td><td>Montage complet</td><td>Sous-titres IA, transitions, effets</td></tr>
+ <tr><td>Submagic</td><td>Sous-titres dynamiques</td><td>Sous-titres type TikTok viraux</td></tr>
+ <tr><td>Copilot (Microsoft)</td><td>Productivité</td><td>Excel, Outlook, automatisation bureautique</td></tr>
+ <tr><td>Manus</td><td>Agent IA autonome</td><td>Recherche multitâche, automatisation</td></tr>
+ <tr><td>Lovable</td><td>No-code</td><td>Créer sites/apps sans coder</td></tr>
+ <tr><td>Assembly AI</td><td>Transcription audio</td><td>Podcast, appels, sous-titres</td></tr>
+ <tr><td>Meta AI</td><td>Réseaux sociaux</td><td>WhatsApp, Instagram, Facebook IA</td></tr>
+ <tr><td>Kimi</td><td>Documents longs</td><td>Analyse de PDF, contrats, rapports</td></tr>
+ <tr><td>Make.com / Zapier</td><td>Automatisation</td><td>Workflows, notifications, CRM</td></tr>
+ </tbody>
+ </table>
+
+ <!-- PLAN CASH EN 7 JOURS -->
+ <h2>PLAN IA RENTABLE EN 7 JOURS</h2>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">Jour 1</span><span class="outil-nom">Prise en main & offre</span></div>ChatGPT + Claude: définissez une niche rentable et générez 10 idées de services premium. Résultat: offre commerciale claire.</div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">Jour 2</span><span class="outil-nom">Visuels pro</span></div>Canva AI + Leonardo AI: créez 5 affiches, 3 posts Instagram et 1 banniére LinkedIn. Portfolio prêt à vendre.</div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">Jour 3</span><span class="outil-nom">Copywriting viral</span></div>ChatGPT: scripts TikTok, textes publicitaires et messages WhatsApp de vente.</div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">Jour 4</span><span class="outil-nom">Vidéo virale (cash)</span></div>Kling + Sora 2: 2 vidéos publicitaires + 1 storytelling à fort impact pour TikTok/Ads.</div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">Jour 5</span><span class="outil-nom">Automatisation</span></div>Copilot + Manus: automatisez les réponses clients, la génération de contenu et le suivi prospects.</div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">Jour 6</span><span class="outil-nom">Acquisition clients</span></div>Perplexity + ChatGPT: trouvez 20 prospects et envoyez des messages de prospection "Je booste votre visibilité IA".</div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">Jour 7</span><span class="outil-nom">Vente & scaling</span></div>Transformez prospects en clients : pack 10 visuels + 5 vidéos (25k-100k FCFA), gestion réseaux (50k-200k FCFA/mois).</div>
+
+ <!-- PROGRAMME 30 JOURS DéTAILLé -->
+ <h2>PROGRAMME COMPLET - 30 jours (creation de contenu et business)</h2>
+
+ <!-- SEMAINE 1 : FONDATIONS -->
+ <div class="week-banner">SEMAINE 1 : FONDATIONS ET STRATEGIE (Jour 1 à 7)</div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 1</span><span class="outil-nom">Claude.ai - Votre stratége principal</span></div>
+<div class="inscription"><strong>INSCRIPTION CLAUDE.AI (2 min)</strong><ol>
+<li>Allez sur <a href="https://claude.ai" target="_blank">claude.ai</a></li>
+<li>Cliquez <strong>"Sign up"</strong> puis <strong>"Continue with Google"</strong></li>
+<li>Acceptez les conditions puis choisissez le plan <strong>Free</strong></li>
+<li>Accès immédiat - Claude 3.5 Sonnet - 50 messages/jour gratuits</li>
+</ol></div>
+<p><strong>Matin :</strong> Créez votre compte gratuit. Comprenez le prompt. Prompt : <em>"Je suis débutant en création de contenu. Je veux créer des vidéos éducatives sur [votre thème]. Cible : jeunes 18-35 ans Afrique francophone. Propose 3 idées courtes (&lt;60s) + 1 idée longue (3-5min)."</em></p><p><strong>Après-midi :</strong> Créez votre <strong>Brand Brain</strong> : "Aide-moi à créer ma fiche créateur : nom, domaine, 3 valeurs, ton, public cible."</p>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de prompts - Claude.ai</div>
+<div class="prompt">Idéation : "Je crée du contenu sur [théme] pour [audience]. Propose 5 idées de vidéos originales adaptées au marché béninois, avec titre et angle pour chacune."</div>
+<div class="prompt">Calendrier : "Génére un calendrier éditorial de 4 semaines (3 posts/semaine) sur [théme]. Pour chaque post : format, titre, angle, hashtags."</div>
+<div class="prompt">Analyse : "Voici mon idée : [idée]. Identifie forces, faiblesses et comment la rendre 10x plus engageante pour une audience africaine francophone."</div>
+<div class="prompt">Offre : "Rédige une offre de service IA pour PME béninoises. Inclure : problème résolu, solution, tarif (50k-200k FCFA/mois), garantie."</div>
+</div>
+<div class="astuce">Astuce : plus vous nourrissez l'IA de contexte, meilleurs sont les résultats.</div></div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 2</span><span class="outil-nom">DeepSeek - Cerveau analytique</span></div>
+<div class="inscription"><strong>INSCRIPTION DEEPSEEK (2 min)</strong><ol>
+<li>Allez sur <a href="https://chat.deepseek.com" target="_blank">chat.deepseek.com</a></li>
+<li>Cliquez <strong>"Sign Up"</strong>  email + mot de passe</li>
+<li>Vérifiez votre email  cliquez le lien de confirmation</li>
+<li>Sélectionnez le modèle <strong>DeepSeek-R1</strong> (1M tokens, 100% gratuit)</li>
+</ol></div>
+<p>DeepSeek (1M tokens gratuit). Analysez les idées : <em>"Classe ces idées par pertinence pour mon audience, propose 3 angles créatifs inattendus et des titres percutants."</em> Décomposez la meilleure idée : accroche, 3 points clés, conclusion, exemples, erreurs - éviter.</p>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de prompts - DeepSeek</div>
+<div class="prompt">Classement : "Voici mes idées : [liste]. Classe-les par potentiel viral pour [audience]. Explique et propose 3 angles inattendus pour la n°1."</div>
+<div class="prompt">Structure : "Décompose la vidéo : [titre]. Accroche 3s - 3 points clés avec exemples africains - conclusion mémorable - 3 erreurs courantes - appel à l'action."</div>
+<div class="prompt">Script complet : "écris le script d'une vidéo de 2 minutes sur [sujet] pour [audience]. Ton : [expert/ami]. Inclure : intro hook, développement, outro."</div>
+<div class="prompt">Analyse concurrentielle : "Analyse ce contenu : [description]. Points forts, points faibles, comment faire mieux pour mon audience béninoise."</div>
+</div>
+<div class="exercice">? Structure détaillée de votre première vidéo prête.</div></div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 3</span><span class="outil-nom">ChatGPT - Le créatif</span></div>
+<div class="inscription"><strong>INSCRIPTION CHATGPT (3 min)</strong><ol>
+<li>Allez sur <a href="https://chat.openai.com" target="_blank">chat.openai.com</a></li>
+<li>Cliquez <strong>"Sign up"</strong> puis <strong>"Continue with Google"</strong></li>
+<li>Entrez votre prénom  acceptez les conditions</li>
+<li>Accès gratuit - GPT-4o mini (VPN recommandé si blocage depuis le Bénin)</li>
+</ol></div>
+<p><strong>Règle d'or : Claude pour le fond, ChatGPT pour la forme.</strong> Donnez la structure - ChatGPT : "Propose 5 accroches TikTok et 3 tons différents." Puis Claude pour le script complet (2 minutes). Enfin améliorez avec ChatGPT (emojis, phrase choc).</p><div class="prompt">? "Voici mon script : [coller]. Ajoute des emojis, rends la conclusion émotionnelle, donne un titre choc."</div>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de prompts - ChatGPT</div>
+<div class="prompt">Accroches TikTok : "Propose 10 accroches TikTok pour [sujet]. Mix : question choc / stat surprenante / déclaration controversée / humour / défi."</div>
+<div class="prompt">Copywriting WhatsApp : "écris 3 messages de vente WhatsApp pour proposer [service IA] - un entrepreneur béninois. Amical, max 4 lignes, appel à l'action clair."</div>
+<div class="prompt">Description YouTube : "écris la description YouTube pour ma vidéo sur [sujet]. Inclure : résumé 2 phrases, 3 questions abordées, 15 hashtags."</div>
+<div class="prompt">Amélioration : "Voici mon script : [coller]. Ajoute emojis, rends la conclusion émotionnelle, propose un titre choc et description de miniature."</div>
+</div></div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 4</span><span class="outil-nom">Gemini + Perplexity - Recherche &amp; tendances</span></div>
+<div class="inscription"><strong>ACCES (2 min chacun)</strong><ol>
+<li><strong>Gemini :</strong> <a href="https://gemini.google.com" target="_blank">gemini.google.com</a>  connexion avec votre compte Google (accès immédiat)</li>
+<li><strong>Perplexity :</strong> <a href="https://perplexity.ai" target="_blank">perplexity.ai</a>  "Sign Up"  Google  recherches sourcées gratuites</li>
+</ol></div>
+<p>Gemini pour tendances Bénin/Afrique. Perplexity pour analyser un concurrent. Intégrez une tendance dans votre script.</p>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de prompts - Gemini &amp; Perplexity</div>
+<div class="prompt">Gemini - Tendances : "Quelles sont les 5 tendances contenu les plus virales au Bénin et en Afrique de l'Ouest en 2026  Formats qui fonctionnent sur TikTok et Instagram."</div>
+<div class="prompt">Gemini - Marché : "Analyse le marché des créateurs de contenu IA en Afrique francophone. Quels types de contenus générent le plus d'engagement en 2026 ?"</div>
+<div class="prompt">Perplexity - Concurrents : "Analyse les 3 meilleurs créateurs de contenu sur [théme] en Afrique. Points forts, stratégie de monétisation, lacunes - exploiter."</div>
+<div class="prompt">Perplexity - Stats : "Statistiques 2025-2026 sur l'utilisation des réseaux sociaux au Bénin et en Afrique de l'Ouest. Sources officielles uniquement."</div>
+</div>
+<div class="exercice">? Script enrichi + tendances intégrées.</div></div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 5</span><span class="outil-nom">Copilot &amp; Kimi - Productivité &amp; docs longs</span></div>
+<div class="inscription"><strong>ACCES (1 min chacun)</strong><ol>
+<li><strong>Copilot Microsoft :</strong> <a href="https://copilot.microsoft.com" target="_blank">copilot.microsoft.com</a>  connexion compte Microsoft ou Google - gratuit</li>
+<li><strong>Kimi :</strong> <a href="https://kimi.moonshot.cn" target="_blank">kimi.moonshot.cn</a>  "Sign Up"  email  accès 200k tokens/message - supporte PDF, DOCX</li>
+</ol></div>
+<p>Copilot : générez un tableau Excel de suivi de production. Kimi : analysez un long rapport. Créez votre Prompt Library.</p>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de prompts - Copilot &amp; Kimi</div>
+<div class="prompt">Copilot - Excel : "Crée un tableau de suivi de production contenu. Colonnes : Date - Titre - Outil IA - Statut (idée/prod/publié) - Plateforme - Vues - Notes."</div>
+<div class="prompt">Copilot - Email : "Rédige un email de prospection pour proposer mes services de création IA - une PME béninoise. Ton pro, 150 mots max, appel à l'action."</div>
+<div class="prompt">Kimi - Analyse PDF : "Voici un document [upload]. Résume en 10 bullet points. Identifie les risques et les opportunités business."</div>
+<div class="prompt">Kimi - Rapport : "Analyse ce document de [X pages] et extrais : these principale, 5 insights actionnables, recommandations pour mon business IA."</div>
+</div>
+<div class="astuce">Bibliothèque de prompts + organisation de la production.</div></div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 6 &amp; 7</span><span class="outil-nom">REVISION &amp; PLANIFICATION SEMAINE 2</span></div><p>Relisez votre carnet, testez - nouveau chaque outil, préparez les scripts pour la production audio/image de la semaine 2.</p></div>
+
+ <!-- SEMAINE 2 : AUDIO & IMAGE -->
+ <div class="week-banner">SEMAINE 2 : AUDIO ET IMAGE NOUVELLE GENERATION (J8-J14)</div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 8</span><span class="outil-nom">ElevenLabs - Voix IA professionnelle</span></div>
+<div class="inscription"><strong>INSCRIPTION ELEVENLABS (3 min)</strong><ol>
+<li>Allez sur <a href="https://elevenlabs.io" target="_blank">elevenlabs.io</a></li>
+<li>Cliquez <strong>"Get Started Free"</strong>  Google ou email</li>
+<li>Plan gratuit : 10 000 caractères/mois - 30+ voix - téléchargement MP3</li>
+<li>Allez dans <strong>"Speech Synthesis"</strong>  choisissez une voix francophone (Mireille, Antoine)</li>
+<li>Paramêtrez la stabilité (0.7) et la clarté (0.8) pour un rendu naturel</li>
+</ol></div>
+<p>Générez l'audio par sections (intro, points, conclusion) avec émotions. Téléchargez les MP3.</p><div class="prompt">(enthousiaste) "Bienvenue ! Aujourd'hui on va révolutionner votre façon de travailler."</div>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de textes - ElevenLabs</div>
+<div class="prompt">Intro vidéo : "Bienvenue ! Dans cette vidéo, tu vas découvrir comment [bénéfice] en seulement [durée]. Reste jusqu'à la fin, j'ai une surprise pour toi !"</div>
+<div class="prompt">Point clé : "Voici le secret que personne ne te dit sur [sujet] : [révélation]. J'ai testé cette méthode pendant [durée] et les résultats sont impressionnants."</div>
+<div class="prompt">Appel - l'action : "Si cette vidéo t'a aidé, abonne-toi et active la cloche. Dis-moi en commentaire : quelle est ta plus grande difficulté avec [théme] ?"</div>
+<div class="prompt">Accroche émotionnelle : "Tu travailles dur chaque jour, mais tes efforts ne semblent pas récompensés. Je suis passé par lé. Aujourd'hui, tout change."</div>
+</div></div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 9</span><span class="outil-nom">Suno AI - Musique originale</span></div>
+<div class="inscription"><strong>INSCRIPTION SUNO AI (2 min)</strong><ol>
+<li>Allez sur <a href="https://suno.ai" target="_blank">suno.ai</a></li>
+<li>Cliquez <strong>"Sign Up"</strong>  connexion Google ou Discord</li>
+<li>Plan gratuit : 50 crédits/jour - 10 générations de 2 minutes</li>
+<li>Cliquez <strong>"Create"</strong>  activez <strong>"Custom Mode"</strong> pour écrire vos propres paroles</li>
+</ol></div>
+<p>Générez jingle intro (afrobeat, 10s), musique de fond calme (loopable), musique conclusion inspirante.</p><div class="prompt">"instrumental, african vibes, soft percussion, calm background music, loopable, 2 minutes"</div>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de prompts - Suno AI</div>
+<div class="prompt">Jingle intro : "upbeat afrobeats intro, energetic, 10 seconds, african drums, positive vibes, no lyrics, professional podcast style, fade in"</div>
+<div class="prompt">Fond de travail : "soft inspirational background music, piano and light percussion, calm focused atmosphere, loopable, no lyrics, warm african feeling"</div>
+<div class="prompt">Outro cinématique : "emotional outro, acoustic guitar, warm african sunset, 15 seconds, gentle fade out, no lyrics, cinematic, hopeful"</div>
+<div class="prompt">Jingle publicitaire : "catchy 8-second advertising jingle, afropop style, memorable hook, professional, positive energy, brand identity, no vocals"</div>
+</div></div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 10</span><span class="outil-nom">NanoBanana + Leonardo - Images pro</span></div>
+<div class="inscription"><strong>INSCRIPTION (3 min chacun)</strong><ol>
+<li><strong>NanoBanana :</strong> <a href="https://nanobanana.ai" target="_blank">nanobanana.ai</a>  Sign Up  Google - édition d'images par dialogue en français</li>
+<li><strong>Leonardo AI :</strong> <a href="https://leonardo.ai" target="_blank">leonardo.ai</a>  "Launch App"  Google  150 crédits/jour gratuits</li>
+<li>Dans Leonardo : choisissez le modèle <strong>Leonardo Phoenix</strong> (meilleure qualité)</li>
+</ol></div>
+<p>NanoBanana : "jeune créateur africain, studio moderne, format 16:9" puis modifiez par dialogue. Leonardo : créez 3 visuels pour réseaux sociaux + banniere LinkedIn.</p><div class="astuce">? Miniature accrocheuse + identité visuelle cohérente.</div>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de prompts - NanoBanana &amp; Leonardo AI</div>
+<div class="prompt">NanoBanana - Création : "Crée une image : jeune entrepreneur africain souriant devant un écran avec graphiques lumineux, style moderne pro, fond bleu nuit, format 16:9"</div>
+<div class="prompt">NanoBanana - Modification : "Modifie cette image : change le fond pour une ville africaine au coucher du soleil - ajoute le texte 'Success' en doré en bas - gauche"</div>
+<div class="prompt">Leonardo - Post Instagram : "Young African entrepreneur, confident smile, modern office, warm lighting, blue and orange brand colors, square 1:1, ultra HD, photorealistic"</div>
+<div class="prompt">Leonardo - Miniature YouTube : "YouTube thumbnail, bold text 'Comment [Bénéfice]', shocked excited face, high contrast, red yellow, 16:9, eye-catching, professional"</div>
+<div class="prompt">Leonardo - Banniére LinkedIn : "Professional LinkedIn banner, African business theme, blue gradient, minimalist, text 'Expert IA - Créateur de Contenu', 1584x396px"</div>
+</div></div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 11</span><span class="outil-nom">Sora 2 / Kling AI - Vidéo réaliste</span></div>
+<div class="inscription"><strong>INSCRIPTION (3 min)</strong><ol>
+<li><strong>Kling AI :</strong> <a href="https://klingai.com" target="_blank">klingai.com</a>  "Sign Up"  Google - 5 vidéos gratuites/jour</li>
+<li><strong>Sora 2 :</strong> <a href="https://sora.openai.com" target="_blank">sora.openai.com</a>  compte OpenAI nécessaire - accès limité gratuit</li>
+<li><strong>Alternative gratuite :</strong> <a href="https://runwayml.com" target="_blank">runwayml.com</a>  Sign Up  125 crédits offerts</li>
+</ol></div>
+<p>Prompts : marché Cotonou, gros plan mains sur ordinateur, portrait entrepreneur souriant. Générez les clips.</p><div class="prompt">"Cinematic wide shot of a lively market in West Africa, women selling fabrics, golden hour, 6 seconds"</div>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de prompts - Kling AI &amp; Sora 2</div>
+<div class="prompt">Marché béninois : "Cinematic wide shot, vibrant market in Cotonou Benin, colorful fabrics, women traders smiling, golden hour light, 4K, 6 seconds, smooth pan"</div>
+<div class="prompt">Entrepreneur : "Close-up young African man typing on laptop, modern coworking space, city view, warm light, focus pull, cinematic, 5 seconds"</div>
+<div class="prompt">Pub produit : "Product showcase, hands holding smartphone with glowing app interface, dark background, neon blue accents, slow rotation, professional, 4 seconds"</div>
+<div class="prompt">Intro canal : "Dynamic intro, African map zooms on Benin, burst of orange blue light, text appears [Nom chaîne], energetic, 3 seconds, logo animation"</div>
+</div></div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 12</span><span class="outil-nom">Meta AI &amp; Assembly AI - Réseaux &amp; audio</span></div>
+<div class="inscription"><strong>ACCES (2 min)</strong><ol>
+<li><strong>Meta AI :</strong> Dans WhatsApp / Instagram / Facebook  icone IA - ou <a href="https://meta.ai" target="_blank">meta.ai</a> - connexion compte Meta</li>
+<li><strong>Assembly AI :</strong> <a href="https://assemblyai.com" target="_blank">assemblyai.com</a>  "Get a free API key"  email - 5h de transcription gratuite/mois</li>
+</ol></div>
+<p>Meta AI : 5 idées Reels, réponse - commentaire difficile. Assembly AI : transcrivez un appel client fictif, extrayez les besoins avec Claude.</p>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de prompts - Meta AI</div>
+<div class="prompt">Idées Reels : "Propose 5 idées de Reels viraux sur [théme] pour audience africaine. Format 30-60s. Accroche, structure, son tendance, hashtags pour chacun."</div>
+<div class="prompt">Réponse commentaire : "Un abonné écrit : '[commentaire difficile]'. Comment répondre de façon pro, empathique, et qui valorise la communauté ?"</div>
+<div class="prompt">Caption Instagram : "écris 3 captions pour mon post sur [sujet] : 1) inspirant 2) humoristique 3) informatif. Max 150 mots + 10 hashtags chacun."</div>
+<div class="prompt">Stratégie WhatsApp : "Crée une séquence de 5 messages WhatsApp pour convertir un prospect en client pour mon service [description]. Espacement : J+1, J+3, J+7."</div>
+</div></div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 13</span><span class="outil-nom">Organisation &amp; plan de montage</span></div><p>Structurez tous les fichiers, vérifiez qualité. écrivez le plan de montage seconde par seconde.</p></div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 14</span><span class="outil-nom">REPOS &amp; PREPARATION MONTAGE</span></div><p>Regardez des tutoriels CapCut, préparez votre espace de travail.</p></div>
+
+ <!-- SEMAINE 3 : MONTAGE -->
+ <div class="week-banner">SEMAINE 3 : MONTAGE CAPCUT ET PRODUCTION FINALE (J15-J21)</div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 15</span><span class="outil-nom">CapCut - Timeline &amp; synchronisation</span></div>
+<div class="inscription"><strong>INSTALLATION CAPCUT (5 min)</strong><ol>
+<li><strong>PC :</strong> <a href="https://capcut.com" target="_blank">capcut.com</a>  téléchargez CapCut Desktop (Windows/Mac) - gratuit complet</li>
+<li><strong>Mobile :</strong> App Store / Play Store  "CapCut" - 100% des fonctionnalités gratuites</li>
+<li>Créez un compte, cliquez "New Project", puis choisissez le format <strong>1920x1080</strong> (horizontal) ou <strong>1080x1920</strong> (vertical TikTok)</li>
+<li>Importez vos médias depuis votre dossier Projet_IA_2026</li>
+</ol></div>
+<p>Importez tous les médias. Disposez la voix principale, musique de fond (volume 25%), jingle intro.</p></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 16</span><span class="outil-nom">Synchronisation &amp; transitions</span></div><p>Placez les plans de coupe, synchronisez avec la voix. Transitions fondu, supprimez les silences, réduction bruit.</p></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 17</span><span class="outil-nom">Sous-titres automatiques &amp; effets</span></div><p>Générez sous-titres IA CapCut, personnalisez police, animation "pop". Ajoutez mots-clés animés. Filtre warm/cinématique.</p></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 18</span><span class="outil-nom">Révision &amp; export</span></div><p>Visionnez 4 fois : cohérence narrative, transitions, qualité audio. Exportez en 1080p, 16:9.</p></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 19</span><span class="outil-nom">Formats adaptatifs &amp; Submagic</span></div>
+<div class="inscription"><strong>INSCRIPTION SUBMAGIC (2 min)</strong><ol>
+<li>Allez sur <a href="https://submagic.co" target="_blank">submagic.co</a></li>
+<li>"Get started for free"  Google  3 vidéos gratuites/mois</li>
+<li>Upload votre vidéo  langue <strong>Francais</strong>  style <strong>TikTok Bold</strong></li>
+<li>Personnalisez : couleur des mots surligués en orange #FF6600, police : Montserrat Bold</li>
+</ol></div>
+<p>Exportez 3 versions : horizontale (YouTube), verticale 9:16 (TikTok/Reels), Shorts. Générez miniature finale (Canva).</p></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 20</span><span class="outil-nom">Textes de publication &amp; calendrier</span></div><p>ChatGPT genere titres, descriptions, hashtags pour toutes plateformes. Créez calendrier de publication.</p></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 21</span><span class="outil-nom">Publication stratégique</span></div><p>Publiez sur YouTube, TikTok, Instagram, LinkedIn.  Félicitations, votre première vidéo IA est en ligne !</p></div>
+
+ <!-- SEMAINE 4 : ANALYSE + AUTOMATISATION + MONETISATION -->
+ <div class="week-banner">SEMAINE 4 : ANALYSE, AUTOMATISATION ET MONETISATION (J22-J30)</div>
+
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 22</span><span class="outil-nom">Analyse des commentaires avec DeepSeek</span></div><p>Collectez commentaires, vues. DeepSeek : "Analyse ces commentaires, donne sujets récurrents, sentiment, 2 idées prochaines vidéos."</p></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 23</span><span class="outil-nom">Templates &amp; workflow reproductible</span></div><p>Enregistrez template CapCut, finalisez bibliothèque de prompts (30+ prompts). Checklist production en 9 étapes.</p></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 24</span><span class="outil-nom">Stratégie cross-posting &amp; teasers</span></div><p>Créez 2 teasers de 15s. Planifiez sur Buffer/Hootsuite. Optimisez description YouTube (chapitres, mots-clés).</p></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 25</span><span class="outil-nom">Monétisation et offre de service</span></div><p>ChatGPT brainstorm : 5 façons de monétiser (prestations, formations, contenu pour marques). Rédigez une offre "Création vidéo assistée par IA". Construisez un portfolio.</p><div class="exercice">? Offre commerciale prête (Pack 10 visuels + 5 vidéos : 50k-150k FCFA)</div></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 26</span><span class="outil-nom">Avancé &amp; scripts de vente</span></div><p>ChatGPT : script appel ou message "Je booste votre visibilité avec l'IA". Anticipez objections avec Claude.</p></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 27</span><span class="outil-nom">Automatisation Make/Manus</span></div>
+<div class="inscription"><strong>INSCRIPTION (3 min chacun)</strong><ol>
+<li><strong>Make.com :</strong> <a href="https://make.com" target="_blank">make.com</a>  "Get started free"  Google - 1?000 opérations/mois gratuites</li>
+<li><strong>Manus IA :</strong> <a href="https://manus.ai" target="_blank">manus.ai</a>  liste d'attente - agent autonome multitâche</li>
+<li><strong>Alternative :</strong> <a href="https://zapier.com" target="_blank">zapier.com</a>  100 tâches/mois gratuites</li>
+</ol></div>
+<p>Configurez automation : formulaire Google Sheets  notification WhatsApp. Script Python via DeepSeek pour prompts en lot.</p>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de prompts - Make.com &amp; Manus</div>
+<div class="prompt">Make - Scénario : "Dans Make.com, crée un scénario : quand un Google Form est soumis (nom + demande client), envoie automatiquement un message WhatsApp de confirmation."</div>
+<div class="prompt">DeepSeek - Script Python : "écris un script Python qui lit un CSV de 50 sujets et genere automatiquement un prompt pour chaque sujet via l'API OpenAI. Explique chaque ligne."</div>
+<div class="prompt">Manus - Recherche autonome : "Recherche les 10 meilleurs créateurs IA en Afrique francophone sur Instagram/YouTube. Pour chacun : abonnés, type contenu, fréquence, taux engagement."</div>
+</div></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 28</span><span class="outil-nom">Planification 3 mois &amp; Lovable</span></div>
+<div class="inscription"><strong>INSCRIPTION LOVABLE (3 min)</strong><ol>
+<li>Allez sur <a href="https://lovable.dev" target="_blank">lovable.dev</a></li>
+<li>"Get started"  GitHub ou Google - 5 projets gratuits, 20 générations/mois</li>
+<li>Cliquez <strong>"New Project"</strong>  décrivez votre site directement en français</li>
+<li>Lovable genere un site complet (HTML/CSS/JS) en quelques secondes</li>
+</ol></div>
+<p>Objectifs quantitatifs et qualitatifs. Créez votre landing page avec Lovable (site vitrine pour votre offre).</p>
+<div class="prompts-block">
+<div class="prompt-label">Exemples de prompts - Lovable</div>
+<div class="prompt">Landing page : "Crée une landing page pro pour mon service de création de contenu IA. Nom : [votre nom]. Services : visuels, vidéos, gestion réseaux. Couleurs bleu et orange. Sections : héro, services, tarifs, témoignages, contact."</div>
+<div class="prompt">Portfolio : "Genere un portfolio one-page pour créateur de contenu IA en Afrique. Sections : - propos - Services (3 offres en FCFA) - Réalisations - Contact WhatsApp."</div>
+<div class="prompt">Modification : "Change les couleurs en bleu #0033BB et orange #FF6600. Ajoute un bouton WhatsApp flottant avec le numéro [votre numéro]. Rends le site responsive mobile."</div>
+</div></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 29</span><span class="outil-nom">Veille &amp; communauté</span></div><p>Listez newsletters IA, chaînes YouTube, groupes Facebook "Créateurs IA Afrique". Publiez votre parcours sur LinkedIn avec #FullStackIA.</p></div>
+ <div class="card-jour"><div class="jour-header"><span class="jour-num">JOUR 30</span><span class="outil-nom">Bilan, célébration &amp; certificat international</span></div><p>Listez vos productions (4+ vidéos), outils maîtrisés (35+), compétences acquises. Obtenez votre certificat ci-dessous.</p></div>
+
+ <!-- CERTIFICAT 30 JOURS --><!-- CERTIFICAT 30 JOURS -->
+ <div style="text-align: center; margin: 2rem 0 1rem;">
+ <h2>CERTIFICAT FULL-STACK IA - 30 JOURS</h2>
+ <button class="btn-certif" id="generateInternCertif">GENERER MON CERTIFICAT 30 JOURS</button>
+ </div>
+ <div id="certificateContainer" style="display:none;" class="certificate-international" id="cert30ToDownload">
+ <div class="institute-logo">
+ <img src="Logo IFP CJEPE-BENIN.png" alt="Logo IFP CJEPE-BENIN">
+ <div class="institute-name">INSTITUT DE FORMATION PROFESSIONNELLE<br>CJEPE-BENIN</div>
+ </div>
+ <div class="cert-seal">CERTIFIE</div>
+ <h3>CERTIFICAT DE COMPLETION</h3>
+ <p><strong>Programme Full-Stack IA - 30 jours</strong><br>Accréditation internationale - Niveau professionnel</p>
+<p>Ce certificat est décerné à :</p>
+ <div class="cert-name-large" id="globalCertName">[Nom du lauréat]</div>
+ <p>Pour avoir suivi avec succès l'intégralité du cursus Producteur de Contenu Full-Stack IA (30 jours intensifs), démontrant une maîtrise avancée des intelligences artificielles appliquées à la création de contenu : stratégie (Claude, DeepSeek, ChatGPT), production audio (ElevenLabs, Suno), édition visuelle (NanoBanana, Leonardo), génération vidéo (Sora 2, Kling AI, Veo 3), montage professionnel (CapCut), automatisation (Make/Manus/Copilot) et monétisation.</p>
+ <p><strong>Compétences certifiées :</strong> 35+ outils IA - workflow complet - marketing augmenté - production vidéo autonome - business IA</p>
+ <p>Date d'obtention : <span id="certifInternationalDate"></span><br>Numéro de série : <span id="certSerial">FS-IA-</span><span id="randomSerial"></span></p>
+ <div class="signature-footer">
+ <p>_________________________</p>
+ <p class="director-signature">Y. Adéniyi Mahmoud SAROUKOU<br>Directeur Général, IFP CJEPE-BENIN</p>
+ </div>
+ <p style="font-size:0.8rem;">Certificat vérifiable - Standard global #AIProCert</p>
+ <p><strong>Partagez votre réussite avec #FullStackIA #CertificatIA30Jours</strong> </p>
+ <div class="btn-group">
+ <button class="download-btn" id="downloadCert30">TELECHARGER LE CERTIFICAT (PNG)</button>
+ </div>
+ </div>
+
+ <!-- CERTIFICAT 28 JOURS -->
+ <h2 style="margin-top: 3rem;">CERTIFICAT IA EN 28 JOURS - Version Entrepreneurs</h2>
+ <div style="text-align: center;">
+ <button class="btn-certif" id="certifBtn28">GENERER MON CERTIFICAT 28 JOURS</button>
+ </div>
+ <div id="certificate28Div" style="display:none;" class="certificate-international" id="cert28ToDownload">
+ <div class="institute-logo">
+ <img src="Logo IFP CJEPE-BENIN.png" alt="Logo IFP CJEPE-BENIN">
+ <div class="institute-name">INSTITUT DE FORMATION PROFESSIONNELLE<br>CJEPE-BENIN</div>
+ </div>
+ <div class="cert-seal">CERTIFIE</div>
+ <h3>CERTIFICAT DE COMPLETION - IA PRO</h3>
+ <p><strong>Programme Certificat IA 28 jours</strong><br>Accréditation internationale - Niveau entrepreneur</p>
+ <p>Ce certificat est décerné à :</p>
+ <div style="font-size: 1.8rem; font-weight: 800; border-bottom: 2px dashed #FF6600; color: #0033BB; display: inline-block; margin: 0.5rem 0;" id="cert28Name">[Nom du Lauréat]</div>
+ <p>Pour avoir complété avec succès l'intégralité du cursus Certificat IA 28 jours, démontrant la maîtrise de 28 outils d'intelligence artificielle appliqués aux entrepreneurs (ChatGPT, Claude, Gemini, Perplexity, DeepSeek, Copilot, Grok, Lovable, Manus, NanoBanana, Leonardo, Meta AI, Assembly, Canva AI, Veo 3, Sora 2, Kimi, Kling, ElevenLabs, Make, Notion AI, etc.) et la capacité à intégrer l'IA dans son quotidien professionnel.</p>
+ <p><strong>Compétences certifiées :</strong> Rédaction IA - Création visuelle & vidéo - Automatisation - Veille stratégique - Monétisation</p>
+ <p>Date d'obtention : <span id="cert28Date"></span><br>Numéro de série : <span id="cert28Serial">IA28-</span><span id="random28Serial"></span></p>
+ <div class="signature-footer">
+ <p>_________________________</p>
+ <p class="director-signature">Y. Adéniyi Mahmoud SAROUKOU<br>Directeur Général, IFP CJEPE-BENIN</p>
+ </div>
+ <p style="font-size:0.7rem;">Certificat vérifiable - Standard international #IAProCert</p>
+ <p>Partagez votre réussite avec <strong>#CertificatIA28Jours #FullStackIA</strong> </p>
+ <div class="btn-group">
+ <button class="download-btn" id="downloadCert28">TELECHARGER LE CERTIFICAT (PNG)</button>
+ </div>
+ </div>
+
+ <!-- RéCAPITULATIF OUTILS GRATUITS -->
+ <div class="plan-box">
+ <h3>Récapitulatif des outils gratuits (Afrique/Bénin)</h3>
+ <ul style="columns:2; column-gap:1.5rem;">
+ <li>Claude.ai - 50 msg/jour</li><li>DeepSeek - illimité</li><li>ChatGPT - GPT-4o mini</li>
+ <li>Gemini - illimité</li><li>ElevenLabs - 10k caractères</li><li>Suno - 50 crédits/jour</li>
+ <li>Leonardo - 150 crédits/jour</li><li>Kling AI - générations quotidiennes</li><li>CapCut - complet</li>
+ <li>Canva AI - gratuit</li><li>Perplexity - recherches</li><li>Make.com - 1000 ops/mois</li>
+ </ul>
+ </div>
+
+ <div class="plan-box">
+ <h3>PLAN D'ACTION 90 JOURS (post-certification)</h3>
+ <p><strong>Mois 1 (ancrage) :</strong> publiez 1 vidéo par semaine, utilisez quotidiennement 5 outils clés.<br>
+ <strong>Mois 2 (optimisation) :</strong> automatisez 5 processus (Make), augmentez vos tarifs de 30%.<br>
+ <strong>Mois 3 (accélération) :</strong> formez un assistant - vos templates IA, atteignez 10k+ vues cumulées + 500k FCFA.</p>
+ </div>
+
+ <div style="background:#f0f3ff; border-radius:1.5rem; padding:1.2rem; margin:1.5rem 0; border-left: 5px solid #FF6600;">
+ <p><strong>MON ENGAGEMENT PERSONNEL</strong><br>
+ Moi, ________________, m'engage - intégrer l'IA dans mon business créatif.<br>
+ Les 3 outils IA que j'utiliserai chaque jour : ________________________.<br>
+ Objectif 90 jours : ________________________________________________.<br>
+ Signature : ___________________ Date : ___________</p>
+ </div>
+
+ <footer>
+ <p>Formation délivrée par <strong>Institut de Formation Professionnelle CJEPE-BENIN</strong></p>
+ <p>Félicitations ! Vous êtes désormais un producteur de contenu Full-Stack IA.<br>
+    La perfection est l'ennemi du progrès - continuez - publier, apprendre, expérimenter.</p>
+ </footer>
+ </div>
+
+<!-- Barre de navigation premium -->
+<nav style="position: fixed; top: 0; left: 0; width: 100%; background: #0033BB; color: white; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; z-index: 1000; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <div style="font-size: 1.2rem; font-weight: bold;">CJEPE-BENIN</div>
+  <div style="display: flex; gap: 1.5rem;">
+    <a href="#programme" style="color: white; text-decoration: none; font-weight: 600;">Programme</a>
+    <a href="#temoignages" style="color: white; text-decoration: none; font-weight: 600;">Témoignages</a>
+    <a href="#inscription" style="color: white; text-decoration: none; font-weight: 600;">Inscription</a>
+  </div>
+</nav>
+
+<!-- Section Témoignages -->
+<section id="temoignages" style="padding: 4rem 2rem; background: #f7fbff;">
+  <h2 style="text-align: center; color: #0033BB;">Témoignages</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
+    <div style="background: white; border: 1px solid #cbdde2; border-radius: 1rem; padding: 1.5rem; max-width: 300px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
+      <p style="font-style: italic; color: #2b4256;">"Ce programme m'a permis de maîtriser les outils IA en un temps record. Une expérience incroyable !"</p>
+      <p style="font-weight: bold; color: #0033BB; margin-top: 1rem;">- Jean Dupont</p>
+    </div>
+    <div style="background: white; border: 1px solid #cbdde2; border-radius: 1rem; padding: 1.5rem; max-width: 300px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
+      <p style="font-style: italic; color: #2b4256;">"Les outils enseignés sont directement applicables dans mon travail. Merci à toute l'équipe !"</p>
+      <p style="font-weight: bold; color: #0033BB; margin-top: 1rem;">- Marie Claire</p>
+    </div>
+    <div style="background: white; border: 1px solid #cbdde2; border-radius: 1rem; padding: 1.5rem; max-width: 300px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);">
+      <p style="font-style: italic; color: #2b4256;">"Une formation complète et bien structurée. Je recommande vivement !"</p>
+      <p style="font-weight: bold; color: #0033BB; margin-top: 1rem;">- Paul K.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section Vidéos et Contenus -->
+<section id="videos" style="padding: 4rem 2rem; background: #eef4fc;">
+  <h2 style="text-align: center; color: #0033BB;">Vidéos et Contenus</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
+    <!-- Exemple de vidéo intégrée -->
+    <div style="max-width: 360px;">
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="Vidéo Exemple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      <p style="text-align: center; margin-top: 0.5rem; color: #0033BB; font-weight: bold;">Introduction au Programme</p>
+    </div>
+
+    <!-- Exemple de contenu interactif -->
+    <div style="max-width: 360px; text-align: center;">
+      <a href="brochure-globale.html" target="_blank" style="text-decoration: none;">
+        <img src="https://via.placeholder.com/360x215" alt="Aperçu Brochure" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">Voir la Brochure</p>
+      </a>
+    </div>
+
+    <!-- Ajouter d'autres vidéos ou contenus ici -->
+  </div>
+</section>
+
+<!-- Section Vidéos principales avec aperçu direct -->
+<section id="videos-principales" style="padding: 4rem 2rem; background: #f7fbff;">
+  <h2 style="text-align: center; color: #0033BB;">Vidéos principales</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
+    <!-- Vidéo 1 -->
+    <div style="max-width: 360px; text-align: center;">
+      <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        <source src="Formation IA/CAPCUT PRO SUR PC.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">CAPCUT PRO SUR PC</p>
+    </div>
+
+    <!-- Vidéo 2 -->
+    <div style="max-width: 360px; text-align: center;">
+      <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        <source src="Formation IA/CRÉATION DE VIDÉO VEO3 AVEC FLOW.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">CRÉATION DE VIDÉO VEO3 AVEC FLOW</p>
+    </div>
+
+    <!-- Vidéo 3 -->
+    <div style="max-width: 360px; text-align: center;">
+      <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        <source src="Formation IA/lv_0_20251029141631.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">Vidéo 3</p>
+    </div>
+
+    <!-- Vidéo 4 -->
+    <div style="max-width: 360px; text-align: center;">
+      <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        <source src="Formation IA/lv_0_20251127073816.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">Vidéo 4</p>
+    </div>
+
+    <!-- Vidéo 5 -->
+    <div style="max-width: 360px; text-align: center;">
+      <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        <source src="Formation IA/lv_0_20260218154328.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">Vidéo 5</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section Contenus associés -->
+<section id="contenus-associes" style="padding: 4rem 2rem; background: #eef4fc;">
+  <h2 style="text-align: center; color: #0033BB;">Contenus associés</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
+    <!-- Contenu 1 -->
+    <div style="max-width: 360px; text-align: center;">
+      <iframe src="Formation IA/1.FORMATION -20260514T140909Z-3-001.zip" style="width: 100%; height: 480px; border: 1px solid #cbdde2; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"></iframe>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">FORMATION - Lecture seule</p>
+    </div>
+    <!-- Contenu 2 -->
+    <div style="max-width: 360px; text-align: center;">
+      <iframe src="Formation IA/2. Compte TikTok monétisé -20260514T140919Z-3-001.zip" style="width: 100%; height: 480px; border: 1px solid #cbdde2; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"></iframe>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">Compte TikTok monétisé - Lecture seule</p>
+    </div>
+    <!-- Contenu 3 -->
+    <div style="max-width: 360px; text-align: center;">
+      <iframe src="Formation IA/3. Bonus astuces vidéo -20260514T140924Z-3-001.zip" style="width: 100%; height: 480px; border: 1px solid #cbdde2; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"></iframe>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">Bonus astuces vidéo - Lecture seule</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section Contenus directement lisibles -->
+<section id="contenus-lisibles" style="padding: 4rem 2rem; background: #eef4fc;">
+  <h2 style="text-align: center; color: #0033BB;">Contenus directement lisibles</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
+    <!-- Contenu 1: PDF -->
+    <div style="max-width: 360px; text-align: center;">
+      <iframe src="Formation IA/1.FORMATION -20260514T140909Z-3-001.zip" style="width: 100%; height: 480px; border: 1px solid #cbdde2; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"></iframe>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">FORMATION - Lecture seule</p>
+    </div>
+
+    <!-- Contenu 2: PDF -->
+    <div style="max-width: 360px; text-align: center;">
+      <iframe src="Formation IA/2. Compte TikTok monétisé -20260514T140919Z-3-001.zip" style="width: 100%; height: 480px; border: 1px solid #cbdde2; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"></iframe>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">Compte TikTok monétisé - Lecture seule</p>
+    </div>
+
+    <!-- Contenu 3: Texte -->
+    <div style="max-width: 360px; text-align: center;">
+      <iframe src="Formation IA/3. Bonus astuces vidéo -20260514T140924Z-3-001.zip" style="width: 100%; height: 480px; border: 1px solid #cbdde2; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"></iframe>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">Bonus astuces vidéo - Lecture seule</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section Tous les contenus -->
+<section id="tous-les-contenus" style="padding: 4rem 2rem; background: #f7fbff;">
+  <h2 style="text-align: center; color: #0033BB;">Tous les contenus</h2>
+
+  <!-- Vidéos principales -->
+  <h3 style="color: #0033BB;">Vidéos principales</h3>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+    <!-- Exemple Vidéo -->
+    <div style="max-width: 360px; text-align: center;">
+      <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        <source src="Formation IA/CAPCUT PRO SUR PC.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">CAPCUT PRO SUR PC</p>
+    </div>
+    <div style="max-width: 360px; text-align: center;">
+      <video controls style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        <source src="Formation IA/CRÉATION DE VIDÉO  VEO3 AVEC FLOW.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">CRÉATION DE VIDÉO VEO3 AVEC FLOW</p>
+    </div>
+    <!-- Ajouter les autres vidéos ici -->
+  </div>
+
+  <!-- Contenus associés -->
+  <h3 style="color: #0033BB; margin-top: 3rem;">Contenus associés</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+    <!-- Exemple Contenu PDF -->
+    <div style="max-width: 360px; text-align: center;">
+      <iframe src="Formation IA/1.FORMATION -20260514T140909Z-3-001.zip" style="width: 100%; height: 480px; border: 1px solid #cbdde2; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"></iframe>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">FORMATION - Lecture seule</p>
+    </div>
+    <div style="max-width: 360px; text-align: center;">
+      <iframe src="Formation IA/2. Compte TikTok monétisé -20260514T140919Z-3-001.zip" style="width: 100%; height: 480px; border: 1px solid #cbdde2; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);"></iframe>
+      <p style="margin-top: 0.5rem; color: #0033BB; font-weight: bold;">Compte TikTok monétisé - Lecture seule</p>
+    </div>
+    <!-- Ajouter les autres contenus ici -->
+  </div>
+</section>
+
+<script>
+ // Fonction de téléchargement
+ async function downloadCertificate(elementId, fileName) {
+ const element = document.getElementById(elementId);
+ if (!element) return;
+ 
+ // Ajout temporaire d'un fond blanc et d'une marge pour l'export
+ const originalBg = element.style.background;
+ element.style.background = "linear-gradient(145deg, #fffef7 0%, #fef9e6 100%)";
+ 
+ try {
+ const canvas = await html2canvas(element, {
+ scale: 2,
+ backgroundColor: '#fef9e6',
+ logging: false,
+ useCORS: true
+ });
+ const link = document.createElement('a');
+ link.download = fileName;
+ link.href = canvas.toDataURL('image/png');
+ link.click();
+ } catch (error) {
+ console.error('Erreur lors de la génération:', error);
+ alert("Une erreur s'est produite. Veuillez réessayer.");
+ }
+ 
+ element.style.background = originalBg;
+ }
+
+ // Certificat 30 jours
+ let cert30Generated = false;
+ document.getElementById('generateInternCertif').addEventListener('click', function() {
+ let userName = prompt("Entrez votre nom complet pour le certificat (30 jours) :", "Prénom NOM");
+ if (!userName || userName.trim() === "") userName = "Lauréat Excellence IA";
+ document.getElementById('globalCertName').innerText = userName.trim();
+ const today = new Date();
+ const formattedDate = today.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
+ document.getElementById('certifInternationalDate').innerText = formattedDate;
+ const randomSerial = Math.floor(Math.random() * 1000000).toString().padStart(6,'0');
+ document.getElementById('randomSerial').innerText = randomSerial;
+ document.getElementById('certificateContainer').style.display = 'block';
+ document.getElementById('certificateContainer').scrollIntoView({ behavior: 'smooth', block: 'center' });
+ cert30Generated = true;
+ });
+
+ document.getElementById('downloadCert30').addEventListener('click', function() {
+ if (!cert30Generated && document.getElementById('certificateContainer').style.display === 'none') {
+ alert("Veuillez d'abord générer le certificat en cliquant sur le bouton 'GéNéRER MON CERTIFICAT 30 JOURS'");
+ return;
+ }
+ downloadCertificate('certificateContainer', 'certificat_fullstack_ia_30jours.png');
+ });
+
+ // Certificat 28 jours
+ let cert28Generated = false;
+ document.getElementById('certifBtn28').addEventListener('click', function() {
+ let userName = prompt("Entrez votre nom complet pour le certificat 28 jours :", "Prénom NOM");
+ if (userName && userName.trim() !== "") {
+ document.getElementById('cert28Name').innerText = userName.trim();
+ } else {
+ document.getElementById('cert28Name').innerText = "Lauréat IA Excellence";
+ }
+ const today = new Date();
+ const dateStr = today.toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
+ document.getElementById('cert28Date').innerText = dateStr;
+ const randomSerial28 = Math.floor(Math.random() * 1000000).toString().padStart(6,'0');
+ document.getElementById('random28Serial').innerText = randomSerial28;
+ document.getElementById('certificate28Div').style.display = 'block';
+ document.getElementById('certificate28Div').scrollIntoView({ behavior: 'smooth', block: 'center' });
+ cert28Generated = true;
+ });
+
+ document.getElementById('downloadCert28').addEventListener('click', function() {
+ if (!cert28Generated && document.getElementById('certificate28Div').style.display === 'none') {
+ alert("Veuillez d'abord générer le certificat en cliquant sur le bouton 'GéNéRER MON CERTIFICAT 28 JOURS'");
+ return;
+ }
+ downloadCertificate('certificate28Div', 'certificat_ia_28jours.png');
+ });
+
+ const ia5ProgramText = document.getElementById('ia5ProgramText');
+ if (ia5ProgramText) {
+ function sanitizeConflictBlob(rawText) {
+ if (!rawText) return '';
+ const text = String(rawText);
+ const head = text.indexOf('<<<<<<< HEAD');
+ const split = text.indexOf('\n=======', head === -1 ? 0 : head);
+ const tail = text.indexOf('\n>>>>>>>', split === -1 ? 0 : split);
+ if (head !== -1 && split !== -1 && tail !== -1 && split > head) {
+ return text.slice(head + '<<<<<<< HEAD'.length, split).trim();
+ }
+ return text;
+ }
+
+ const directPdfText =
+ (window.OFFRES_PDF_CONTENT && window.OFFRES_PDF_CONTENT['Programme 5 Jours IA.pdf']) ||
+ '';
+
+ if (directPdfText) {
+ ia5ProgramText.textContent = sanitizeConflictBlob(directPdfText);
+ } else {
+ fetch('programme_5_jours_ia_extrait.txt')
+ .then((response) => {
+ if (!response.ok) {
+ throw new Error('Fichier programme_5_jours_ia_extrait.txt introuvable');
+ }
+ return response.text();
+ })
+ .then((text) => {
+ ia5ProgramText.textContent = sanitizeConflictBlob(text);
+ })
+ .catch(() => {
+ ia5ProgramText.textContent = "Le contenu n'a pas pu etre charge automatiquement. Ouvrez la page 'Programme 5 Jours IA - Extrait.html' depuis le portail IA.";
+ });
+ }
+ }
+</script>
+<button id="globalBackBtn" aria-label="Retour au portail" onclick="window.location.href='index.html'">Retour au portail</button>
+<style>
+#globalBackBtn{position:fixed;right:16px;bottom:16px;z-index:9999;background:#0033BB;color:#fff;border:none;border-radius:999px;padding:12px 16px;font:600 14px/1.2 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;box-shadow:0 8px 20px rgba(0,0,0,.2);cursor:pointer}
+#globalBackBtn:hover{background:#002a96}
+#globalBackBtn:focus{outline:3px solid #FFB703;outline-offset:2px}
+@media (max-width:640px){#globalBackBtn{right:12px;bottom:12px;padding:10px 14px;font-size:13px}}
+</style>
+<script src="offres_ppt_content.js"></script>
+<script src="formation_complements.js"></script>
+<script src="formations_enrichment.js"></script>
+<script src="site-uniformization.js"></script>
+</body>
+</html>
+

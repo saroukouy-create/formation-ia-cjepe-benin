@@ -12,8 +12,13 @@
 
 <nav id="sidebar">
   <div class="sidebar-logo">
-    <div class="school">CJEPE-BENIN</div>
-    <h2>Formation Expert en IA</h2>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+      <img src="Logo.jpeg" alt="Logo CJEPE-BENIN" style="width:42px;height:42px;">
+      <div>
+        <div class="school">CJEPE-BENIN</div>
+        <h2>Formation Expert en IA</h2>
+      </div>
+    </div>
     <a class="back" href="index.html">← Retour à l'accueil</a>
   </div>
 
@@ -24,7 +29,8 @@
 
   <div class="nav-section">
     <div class="nav-section-label">Introduction</div>
-    <button class="nav-item active" data-target="module-0"><span class="num">00</span>Présentation<span class="check"></span></button>
+    <button class="nav-item active" data-target="parcours-hybride"><span class="num">00</span>Parcours hybride<span class="check"></span></button>
+    <button class="nav-item" data-target="module-0"><span class="num">01</span>Présentation<span class="check"></span></button>
   </div>
 
   <div class="nav-section">
@@ -67,6 +73,92 @@
   </div>
 
   <div id="content">
+
+  <section class="about-section" id="a-propos-parcours" style="padding:60px 60px 20px;">
+    <div class="about-grid">
+      <div class="about-card about-card-main">
+        <div class="about-chip">Parcours institutionnel</div>
+        <h3>Un programme cohérent, pensé pour la progression et l’autonomie</h3>
+        <p>Cette page regroupe l’ensemble des ressources de la formation afin de proposer un parcours fluide, structuré et directement exploitable par les apprenants.</p>
+        <div class="pill-row">
+          <span>Structure claire</span>
+          <span>Contenus organisés</span>
+          <span>Progression pédagogique</span>
+        </div>
+      </div>
+      <div class="about-card">
+        <h3>Ce que vous trouverez ici</h3>
+        <p>Vous avez accès à la formation 15 séances, au parcours IA complet, ainsi qu’à une logique de modules, de TP et de validation progressive.</p>
+        <div class="about-list">
+          <div>Un accès rapide aux ressources du workspace.</div>
+          <div>Des contenus adaptés à différents niveaux.</div>
+          <div>Une structure plus professionnelle et plus lisible.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hybrid-section" id="parcours-hybride">
+    <div class="section-title" style="max-width:760px;">
+      <div class="eyebrow">Parcours intégré</div>
+      <h2>Un parcours harmonisé entre formation courte, programme complet et pratique</h2>
+      <p>Cette section structure l’ensemble des ressources du workspace en trois axes complémentaires : la formation 15 séances, le programme IA détaillé et les ressources de validation.</p>
+    </div>
+
+    <div class="hybrid-grid">
+      <article class="hybrid-card accent">
+        <h3>Formation 15 séances IA</h3>
+        <p>Une approche progressive pensée pour découvrir l’IA générative, les outils, les usages professionnels et les méthodes de production.</p>
+        <ul>
+          <li>15 séances structurées et progressives</li>
+          <li>Exemples pratiques pour la création de contenus</li>
+          <li>Prompts, automatisation, marketing digital et outils IA</li>
+        </ul>
+        <div class="btn-group">
+          <a class="btn btn-primary" href="../Formation%2015%20s%C3%A9ances%20IA/index.html" target="_blank" rel="noopener noreferrer">Ouvrir la plateforme</a>
+        </div>
+      </article>
+
+      <article class="hybrid-card">
+        <h3>Programme IA complet</h3>
+        <p>Le parcours IA du workspace complète le module court avec les bases théoriques, le machine learning, le deep learning et le déploiement.</p>
+        <ul>
+          <li>8 modules de formation</li>
+          <li>TP guidés et quiz de validation</li>
+          <li>Éthique, déploiement, outils IA et business</li>
+        </ul>
+        <div class="btn-group">
+          <a class="btn btn-ghost" href="../IA.html" target="_blank" rel="noopener noreferrer">Voir la page IA.html</a>
+          <a class="btn btn-ghost" href="../Formation%20IA.html" target="_blank" rel="noopener noreferrer">Voir la version détaillée</a>
+        </div>
+      </article>
+
+      <article class="hybrid-card">
+        <h3>Objectifs pédagogiques</h3>
+        <p>Le parcours est pensé pour aider le stagiaire à passer de la découverte à la production concrète, avec un cadre clair et des repères simples.</p>
+        <ul>
+          <li>Comprendre les concepts de base de l’IA</li>
+          <li>Appliquer les outils avec des exercices concrets</li>
+          <li>Construire un projet et valider ses acquis</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="hybrid-steps">
+      <div class="step-card">
+        <div class="step-title">Étape 1</div>
+        <p>Découvrir les bases de l’IA et les usages professionnels.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-title">Étape 2</div>
+        <p>Approfondir les notions techniques et les outils de production.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-title">Étape 3</div>
+        <p>Valider ses compétences avec des exercices, quiz et projets.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- =========================================================
        MODULE 1 — FONDAMENTAUX

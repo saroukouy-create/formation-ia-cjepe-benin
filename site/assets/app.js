@@ -35,7 +35,7 @@ function toggleSidebar() {
 }
 
 function initScrollSpy() {
-  const modules = document.querySelectorAll('.module, .hero-course');
+  const modules = document.querySelectorAll('.module, .hero-course, .hybrid-section');
   const navItems = document.querySelectorAll('.nav-item[data-target]');
   if (!modules.length || !navItems.length) return;
 
