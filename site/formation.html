@@ -1516,8 +1516,13 @@ shap.<span class="fn">plots.waterfall</span>(valeurs_shap[<span class="num">0</s
         <div class="card"><div class="card-icon">2</div><h4>Contexte</h4><p>Informations de fond nécessaires : audience, contraintes, données existantes.</p></div>
         <div class="card"><div class="card-icon">3</div><h4>Tâche précise</h4><p>Le résultat exact attendu, formulé sans ambiguïté.</p></div>
         <div class="card"><div class="card-icon">4</div><h4>Format de sortie</h4><p>Structure demandée : tableau, liste à puces, JSON, longueur maximale...</p></div>
+        <div class="card"><div class="card-icon">5</div><h4>Questions de clarification</h4><p>Demandez à l'IA de vous poser des questions avant de répondre, plutôt que de répondre immédiatement avec des suppositions.</p></div>
       </div>
       <div class="prompt-box"><div class="prompt-label">Exemple de prompt structuré</div>« Tu es un expert en stratégie de contenu pour l'Afrique francophone (rôle). Je lance un service de création de visuels IA pour PME à Cotonou, budget client 50-150k FCFA (contexte). Propose 5 idées de posts Instagram pour ma première semaine (tâche). Réponds sous forme de tableau : Jour | Idée | Angle | Call-to-action (format). »</div>
+      <h4>Technique pro : demander à l'IA de vous poser des questions</h4>
+      <p>Au-delà de la structure Rôle + Contexte + Tâche + Format, une technique utilisée par les professionnels consiste à ajouter une dernière consigne : demander explicitement à l'IA de poser des questions de clarification avant de produire sa réponse. Au lieu de deviner ce que vous voulez, l'IA identifie elle-même les zones d'ombre de votre demande (public cible, ton, longueur, budget, délai...) et vous les demande avant de proposer sa solution — exactement comme le ferait un vrai consultant qui cadre une mission avant de l'exécuter.</p>
+      <div class="prompt-box"><div class="prompt-label">Exemple avec questions de clarification</div>« Tu es un expert en stratégie de contenu pour l'Afrique francophone. Je veux lancer un service de création de visuels IA pour PME à Cotonou. Avant de proposer quoi que ce soit, pose-moi toutes les questions nécessaires pour bien comprendre mon besoin (budget, cible, canaux, ton, délai...). Une fois que j'aurai répondu, propose ta stratégie. »</div>
+      <div class="info-box tip"><strong>À utiliser en complément, pas à la place</strong> Plus le contexte fourni au départ est riche, plus les questions posées par l'IA seront pertinentes et ciblées — cette technique réduit le nombre d'allers-retours et évite les réponses génériques.</div>
       <h4>Agents IA autonomes : la prochaine étape</h4>
       <p>Un <strong>agent IA</strong> (comme Manus, ou les « GPTs » avec outils) ne se contente pas de répondre : il peut planifier des étapes, utiliser des outils (recherche web, exécution de code, envoi d'email) et boucler jusqu'à obtenir le résultat demandé, sans intervention humaine à chaque étape. C'est la brique de base de l'automatisation avancée en entreprise (ex : un agent qui surveille les avis clients, résume les tendances et rédige une ébauche de réponse chaque matin).</p>
       <div class="info-box tip"><strong>Combiner Module 4 et Module 8</strong> Le RAG vu au Module 4 et le prompting avancé vu ici sont les deux briques qui transforment un simple chatbot en assistant d'entreprise capable de répondre avec vos propres documents.</div>
@@ -1587,6 +1592,16 @@ shap.<span class="fn">plots.waterfall</span>(valeurs_shap[<span class="num">0</s
           <div class="quiz-opt" data-correct="true">Rédiger et reformuler des textes directement dans le design</div>
           <div class="quiz-opt" data-correct="false">Générer une voix off</div>
           <div class="quiz-opt" data-correct="false">Créer une base de données</div>
+        </div>
+        <div class="quiz-feedback"></div>
+      </div>
+      <div class="quiz-question">
+        <div class="quiz-q">5. Dans un prompt professionnel, à quoi sert de demander à l'IA de poser des questions avant de répondre ?</div>
+        <div class="quiz-options">
+          <div class="quiz-opt" data-correct="false">À remplacer le besoin de donner un contexte</div>
+          <div class="quiz-opt" data-correct="true">À laisser l'IA clarifier les zones d'ombre avant de produire un résultat pertinent</div>
+          <div class="quiz-opt" data-correct="false">À ralentir volontairement la réponse</div>
+          <div class="quiz-opt" data-correct="false">À fonctionner uniquement avec les outils de génération d'image</div>
         </div>
         <div class="quiz-feedback"></div>
       </div>
