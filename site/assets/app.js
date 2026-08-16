@@ -78,7 +78,7 @@ function renderProgress() {
   const fill = document.getElementById('global-bar-fill');
   const label = document.getElementById('global-bar-label');
   if (fill) fill.style.width = pct + '%';
-  if (label) label.innerHTML = `Progression <b>${pct}%</b> (${doneCount}/${TOTAL_MODULES})`;
+  if (label) label.innerHTML = `Progression <b>${pct}%</b> (${doneCount}/${TOTAL_MODULES} modules · 5 UV)`;
 
   saveProgress(state);
   return { state, doneCount, pct };
@@ -207,7 +207,7 @@ function initCertificate() {
     const { doneCount } = renderProgress();
     if (doneCount < TOTAL_MODULES) {
       const proceed = confirm(
-        `Vous avez validé ${doneCount}/${TOTAL_MODULES} modules (TP + Quiz). ` +
+        `Vous avez validé ${doneCount}/${TOTAL_MODULES} modules (TP + Quiz), soit une partie des 5 Unités de Valeur. ` +
         `Continuer pour générer un certificat de progression provisoire ?`
       );
       if (!proceed) return;
@@ -223,7 +223,7 @@ function initCertificate() {
     const serial = Math.floor(Math.random() * 1000000).toString().padStart(6, '0');
     document.getElementById('cert-serial').textContent = 'IA-CJEPE-' + serial;
     document.getElementById('cert-level').textContent =
-      doneCount >= TOTAL_MODULES ? 'Expert en Intelligence Artificielle' : `Progression (${doneCount}/${TOTAL_MODULES} modules)`;
+      doneCount >= TOTAL_MODULES ? 'Expert en Intelligence Artificielle — 5 Unités de Valeur validées' : `Progression (${doneCount}/${TOTAL_MODULES} modules)`;
 
     cert.classList.add('show');
     cert.scrollIntoView({ behavior: 'smooth', block: 'center' });
